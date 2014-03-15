@@ -1,0 +1,5 @@
+Flask==0.8
+Jinja2==2.6
+MarkupSafe==0.15
+MySQL-python==1.2.3
+Werkzeug==0.8.3
