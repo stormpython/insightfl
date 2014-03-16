@@ -1,7 +1,7 @@
 # imports
 from flask import Flask, request, redirect, url_for, \
     render_template
-import mysqldb
+import MySQLdb
 
 # Creates our application.
 app = Flask(__name__)
