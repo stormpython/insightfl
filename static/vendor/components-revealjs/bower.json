@@ -1,0 +1,15 @@
+{
+  "name": "components-revealjs",
+  "description": "Shim repository for Reveal.js HTML Presentation Framework",
+  "version": "2.6.1",
+  "license": "MIT",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "ignore": [
+    "Makefile",
+    "component.json",
+    "composer.json"
+  ]
+}
