@@ -14,10 +14,6 @@ A basic template for building minimal flask applications.
 
 1. Fork the <a href="https://github.com/stormpython/insightfl/fork">project</a> and clone the repo.
 
-  ```
-  git clone git@github.com:stormpython/insightfl.git
-  ```
-
 2. Install Bower dependencies.
 
   ```
