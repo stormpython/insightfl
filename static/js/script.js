@@ -1,3 +1,1 @@
-/**
- * Created by shelbysturgis on 3/16/14.
- */
+/* Your fancy javascript */
