@@ -27,7 +27,6 @@ A basic template for building minimal flask applications.
 3. Install Python dependencies.
 
   ```
-  virtualenv venv; source venv/bin/activate
   pip install -r requirements.txt
   ```
 
