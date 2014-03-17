@@ -1,7 +1,7 @@
 # imports
 from flask import Flask, request, redirect, url_for, \
     render_template
-import MySQLdb
+from flaskext.mysql import MySQL
 
 # Creates our application.
 app = Flask(__name__)
@@ -17,6 +17,15 @@ app.config.from_pyfile('settings/development.cfg')
 # Run the following command in the terminal:
 # export PROD_CONFIG="/path/to/settings/production.cfg"
 app.config.from_envvar('PROD_CONFIG', silent=True)
+################################################################################
+
+# INITIALIZE MYSQL EXTENSION
+################################################################################
+mysql = MySQL()
+mysql.init_app(app)
+
+# Obtain a cursor
+# cursor = mysql.get_db().cursor()
 ################################################################################
 
 # ROUTING/VIEW FUNCTIONS
