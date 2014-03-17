@@ -1,15 +1,14 @@
 # imports
 from flask import Flask, request, redirect, url_for, \
     render_template
-from flaskext.mysql import MySQL
+import MySQLdb
 
 # Creates our application.
 app = Flask(__name__)
 
 # CONFIGURATION SETTINGS
 ################################################################################
-# Development settings - these are settings you'll use while developing
-# your app.
+# Development settings - settings you'll use while developing your app.
 # These settings should not be used in production.
 app.config.from_pyfile('settings/development.cfg')
 
@@ -19,13 +18,18 @@ app.config.from_pyfile('settings/development.cfg')
 app.config.from_envvar('PROD_CONFIG', silent=True)
 ################################################################################
 
-# INITIALIZE MYSQL EXTENSION
+# INITIALIZE MySQLdb
 ################################################################################
-mysql = MySQL()
-mysql.init_app(app)
+host = app.config["MYSQL_DATABASE_HOST"]
+port = app.config["MYSQL_DATABASE_PORT"]
+user = app.config["MYSQL_DATABASE_USER"]
+passwd = app.config["MYSQL_DATABASE_PASSWORD"]
+db = app.config["MYSQL_DATABASE_DB"]
 
-# Obtain a cursor
-# cursor = mysql.get_db().cursor()
+db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+con = db.cursor()
+# con.execute("""SELECT * FROM user""")
+# results = con.fetchone()
 ################################################################################
 
 # ROUTING/VIEW FUNCTIONS
