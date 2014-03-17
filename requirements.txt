@@ -4,4 +4,3 @@ MarkupSafe==0.19
 MySQL-python==1.2.5
 Werkzeug==0.9.4
 itsdangerous==0.23
-wsgiref==0.1.2
