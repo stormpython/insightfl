@@ -2,4 +2,6 @@
 
 body {
     padding-top: 70px;
+    overflow-y: auto;
 }
+
