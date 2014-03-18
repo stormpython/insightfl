@@ -18,7 +18,7 @@ cd ~/node-latest-install
 curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
 ./configure --prefix=~/local
 make install
-curl https://www.npmjs.org/install.sh | shift
+curl https://www.npmjs.org/install.sh | sh
 
 sudo apt-get build-deps git-core
 sudo apt-get install git-core
