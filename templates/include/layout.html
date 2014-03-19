@@ -53,7 +53,6 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
     <div class="container">
         {% block body %}{% endblock %}
     </div>
@@ -71,7 +70,7 @@
     <!-- Presentation Libraries -->
     <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
-    {% include "reveal.html" %}
+    {% include "include/reveal.html" %}
     <script type="text/javascript">
         // Dynamically add the bootstrap 'active' class to navbar links
         $(document).ready(function($){
