@@ -73,10 +73,10 @@
     <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
     {% include "reveal.html" %}
     <script type="text/javascript">
+        // Dynamically add the bootstrap 'active' class to navbar links
         $(document).ready(function($){
-            var url = window.location.pathname.split('/')[1];
-            console.log(url);
-            $('.nav a[href="'+url+'"]').parent().addClass('active');
+            var urlPath = window.location.pathname.split('/')[1];
+            $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
         });
     </script>
   </body>

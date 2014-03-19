@@ -35,6 +35,7 @@ con = db.cursor()
 # ROUTING/VIEW FUNCTIONS
 ################################################################################
 @app.route('/')
+@app.route('/index')
 def index():
     # Renders index.html.
     return render_template('index.html')
