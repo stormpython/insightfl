@@ -17,7 +17,7 @@ app.config.from_pyfile('settings/development.cfg')
 app.config.from_envvar('PROD_CONFIG', silent=True)
 ################################################################################
 
-# INITIALIZE MySQLdb
+# INITIALIZE DATABASE
 ################################################################################
 host = app.config["DATABASE_HOST"]
 port = app.config["DATABASE_PORT"]
