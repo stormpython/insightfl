@@ -2,17 +2,16 @@
 A basic template for building minimal flask applications.
 
 ### System Requirements
-
-* Python 2.6+
-  * <a href="http://pip.readthedocs.org/en/latest/index.html">pip</a>
-  * virtualenv (**Recommended**)
-* <a href="http://dev.mysql.com/downloads/mysql/">MySQL</a>
-* <a href="http://nodejs.org/download/">node</a>
-  * bower
+* [Python](https://www.python.org/downloads/)
+* [node](http://nodejs.org/download/)
 
 ### Getting Started
+1. Install [pip](http://pip.readthedocs.org/en/latest/installing.html)
+2. Install [bower](http://bower.io).
 
-1. Fork the <a href="https://github.com/stormpython/insightfl/fork">project</a> and clone the repo.
+  ```
+  npm install -g bower
+  ```
 
 2. Install Bower dependencies.
 
