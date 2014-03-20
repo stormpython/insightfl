@@ -1,7 +1,6 @@
 # imports
 from flask import Flask, request, redirect, url_for, \
     render_template
-import MySQLdb
 
 # Creates our application.
 app = Flask(__name__)
@@ -20,14 +19,14 @@ app.config.from_envvar('PROD_CONFIG', silent=True)
 
 # INITIALIZE MySQLdb
 ################################################################################
-host = app.config["MYSQL_DATABASE_HOST"]
-port = app.config["MYSQL_DATABASE_PORT"]
-user = app.config["MYSQL_DATABASE_USER"]
-passwd = app.config["MYSQL_DATABASE_PASSWORD"]
-db = app.config["MYSQL_DATABASE_DB"]
+host = app.config["DATABASE_HOST"]
+port = app.config["DATABASE_PORT"]
+user = app.config["DATABASE_USER"]
+passwd = app.config["DATABASE_PASSWORD"]
+db = app.config["DATABASE_DB"]
 
-db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
-con = db.cursor()
+# db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+# con = db.cursor()
 # con.execute("""SELECT * FROM user""")
 # results = con.fetchone()
 ################################################################################
