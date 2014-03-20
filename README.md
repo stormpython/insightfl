@@ -3,7 +3,10 @@ A basic template for building minimal flask applications.
 
 ### System Requirements
 * [Python](https://www.python.org/downloads/)
-* [node](http://nodejs.org/download/)
+* [node and npm](https://gist.github.com/isaacs/579814)
+
+**For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
+[site](http://www.joyent.com/blog/installing-node-and-npm/).**
 
 ### Getting Started
 1. Install [pip](http://pip.readthedocs.org/en/latest/installing.html)
@@ -13,17 +16,17 @@ A basic template for building minimal flask applications.
   npm install -g bower
   ```
 
-2. Install Bower dependencies.
+3. Install Bower project dependencies.
 
   ```
   bower install
   ```
 
-3. Install Python dependencies.
+4. Install Python project dependencies.
 
   ```
   pip install -r requirements.txt
   ```
 
- That's it! You are ready to start coding up your project.
+That's it! You are ready to start coding up your project.
 
