@@ -7,9 +7,8 @@
 {% block body %}
     <div class="reveal">
         <div class="slides">
-
             <section>
-                <h1>Single Horizontal Slide</h1>
+                <h1>Reveal Your Data Projects</h1>
                 <p>My product discussed here.</p>
             </section>
             <section>
@@ -23,7 +22,10 @@
                     A paragraph with some text and a [link](http://hakim.se).
                 </script>
             </section>
-
         </div>
     </div>
+{% endblock %}
+
+{% block scripts %}
+    {% include "include/reveal.html" %}
 {% endblock %}

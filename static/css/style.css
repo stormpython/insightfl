@@ -28,10 +28,14 @@ body {
 .genericon-github:before,
 .genericon-linkedin:before,
 .genericon-twitter:before {
-    display: inline-block;
     -webkit-font-smoothing: antialiased;
     font: normal 32px/1 'Genericons';
     vertical-align: middle;
-    margin: 5px;
+}
+
+.social-icons {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
 }
 

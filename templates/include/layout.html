@@ -12,9 +12,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+
     <!-- Revealjs core CSS -->
     <link href="{{ url_for('static', filename='vendor/components-revealjs/css/reveal.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/components-revealjs/lib/css/zenburn.css') }}" rel="stylesheet">
+
     {% block head %}{% endblock %}
+
     <!-- Genericons core CSS -->
     <link href="{{ url_for('static', filename='vendor/Genericons/genericons.css') }}" rel="stylesheet">
 
@@ -70,7 +74,9 @@
     <!-- Presentation Libraries -->
     <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
-    {% include "include/reveal.html" %}
+
+    {% block scripts %}{% endblock %}
+
     <script type="text/javascript">
         // Dynamically add the bootstrap 'active' class to navbar links
         $(document).ready(function($){
@@ -78,5 +84,6 @@
             $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
         });
     </script>
+
   </body>
 </html>
