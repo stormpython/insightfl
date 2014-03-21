@@ -1,4 +1,4 @@
-{% extends "include/layout.html" %}
+{% extends "layout/layout.html" %}
 
 {% block head %}
     <link href="{{ url_for('static', filename='vendor/components-revealjs/css/theme/default.css') }}" rel="stylesheet">
@@ -322,5 +322,5 @@
 {% endblock %}
 
 {% block scripts %}
-    {% include "include/reveal.html" %}
+    <script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
 {% endblock %}

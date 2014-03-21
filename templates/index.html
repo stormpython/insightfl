@@ -1,144 +1,142 @@
-{% extends "include/layout.html" %}
+{% extends "layout/layout.html" %}
 
 {% block head %}
-    <style>
-        body {
-            overflow-y: auto;
-        }
-    </style>
+  <style>
+    body {
+      overflow-y: auto;
+    }
+  </style>
 {% endblock %}
 
 {% block container %}
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div id="top" class="container marketing">
+  <div id="top" class="container marketing">
 
-        <!-- START THE FEATURETTES -->
+    <!-- START THE FEATURETTES -->
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">
-                    Build web apps with <span class="text-muted">Insight</span>.
-                </h2>
-                <p class="lead">
-                    New to web development, and need a quick way to get started?
-                    <strong>InsightFL</strong> is a pre-configured template
-                    to help you get started building minimal web applications
-                    with <a href="http://flask.pocoo.org/">Flask</a>.
-                </p>
-                <p class="lead">
-                    Check out the <a href="#">Getting Started</a> guide.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive"
-                     src="http://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"
-                    style="margin-top: 50px;">
-            </div>
-        </div>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Build web apps with <span class="text-muted">Insight</span>.
+        </h2>
+        <p class="lead">
+          New to web development, and need a quick way to get started?
+          <strong>InsightFL</strong> is a pre-configured template
+          to help you get started building minimal web applications
+          with <a href="http://flask.pocoo.org/">Flask</a>.
+        </p>
+        <p class="lead">
+          Check out the <a href="#">Getting Started</a> guide.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive"
+             src="http://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"
+             style="margin-top: 50px;">
+      </div>
+    </div>
 
-        <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive"
-                     src="http://bower.io/img/bower-logo.png" alt="Generic placeholder image">
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">
-                    Built with the <span class="text-muted">POWER</span> of <span class="text-muted">BOWER!</span>
-                </h2>
-                <p class="lead">
-                    Bower is a package manager for the web. Bower depends on <a href="http://nodejs.org">node</a>
-                    and <a href="https://www.npmjs.org/">npm</a>. It can be installed globally using npm:
-                </p>
-                <pre>npm install -g bower</pre>
-                <p class="lead">
-                    Download all your favorite frontend applications using a simple command interface. For example:
-                </p>
-                <pre>bower install bootstrap</pre>
-            </div>
-        </div>
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive"
+             src="http://bower.io/img/bower-logo.png" alt="Generic placeholder image">
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Built with the <span class="text-muted">POWER</span> of <span class="text-muted">BOWER!</span>
+        </h2>
+        <p class="lead">
+          Bower is a package manager for the web. Bower depends on <a href="http://nodejs.org">node</a>
+          and <a href="https://www.npmjs.org/">npm</a>. It can be installed globally using npm:
+        </p>
+        <pre>npm install -g bower</pre>
+        <p class="lead">
+          Download all your favorite frontend applications using a simple command interface. For example:
+        </p>
+        <pre>bower install bootstrap</pre>
+      </div>
+    </div>
 
-        <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">
-                    Bootstrap your app with <span class="text-muted">Twitter Bootstrap.</span>
-                </h2>
-                <p class="lead">
-                    Bootstrap is the most popular frontend framework for developing responsive,
-                    mobile first projects on the web. Easily get started building beautiful,
-                    interactive web pages no matter your skill level.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive"
-                     src="http://ollomedia.com/wp-content/uploads/Bootstrap-2-1-Is-the-Latest-Update-to-Twitter-s-Popular-Open-Source-Project.png"
-                     alt="Generic placeholder image">
-            </div>
-        </div>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Bootstrap your app with <span class="text-muted">Twitter Bootstrap.</span>
+        </h2>
+        <p class="lead">
+          Bootstrap is the most popular frontend framework for developing responsive,
+          mobile first projects on the web. Easily get started building beautiful,
+          interactive web pages no matter your skill level.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive"
+             src="http://ollomedia.com/wp-content/uploads/Bootstrap-2-1-Is-the-Latest-Update-to-Twitter-s-Popular-Open-Source-Project.png"
+             alt="Generic placeholder image">
+      </div>
+    </div>
 
-        <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive"
-                     src="http://freebiesbug.com/wp-content/uploads/2013/09/reveal-js.jpg"
-                     alt="Generic placeholder image">
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">
-                    Create powerful HTML presentations with <span class="text-muted">Reveal.JS</span>.
-                </h2>
-                <p class="lead">
-                    Reveal.js is a framework for easily creating beautiful presentations using HTML. There is even
-                    a fully-featured visual editor. You can try it out at <a href="http://slid.es">http://slid.es</a>.
-                </p>
-            </div>
-        </div>
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive"
+             src="http://freebiesbug.com/wp-content/uploads/2013/09/reveal-js.jpg"
+             alt="Generic placeholder image">
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Create powerful HTML presentations with <span class="text-muted">Reveal.JS</span>.
+        </h2>
+        <p class="lead">
+          Reveal.js is a framework for easily creating beautiful presentations using HTML. There is even
+          a fully-featured visual editor. You can try it out at <a href="http://slid.es">http://slid.es</a>.
+        </p>
+      </div>
+    </div>
 
-        <hr class="featurette-divider" style="margin-bottom: 0px;">
+    <hr class="featurette-divider" style="margin-bottom: 0px;">
 
-        <div class="row featurette">
-            <a href="https://github.com/stormpython/insightfl">
-                <img style="position: absolute; top: 450; right: 0; border: 0; z-index: 1;"
-                     src="https://github-camo.global.ssl.fastly.net/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-                     alt="Fork me on GitHub"
-                     data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-            </a>
-            <div class="col-md-7">
-                <h2 class="featurette-heading" style="margin-top: 50px;">
-                    Everything is in version control from the <span class="text-muted">Git</span> go!
-                </h2>
-                <p class="lead">
-                    Git is a free and open source distributed version control system designed to handle everything
-                    from small to very large projects with speed and efficiency. New to Git?
-                    <a href="http://try.github.io/levels/1/challenges/1">Try it!</a>
-                </p>
-                <p class="lead">
-                    Already a git pro! Fork the project on <span class="text-muted">Github.</span>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive"
-                     src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png"
-                     alt="Generic placeholder image">
-            </div>
-        </div>
+    <div class="row featurette">
+      <a href="https://github.com/stormpython/insightfl">
+        <img style="position: absolute; top: 450; right: 0; border: 0; z-index: 1;"
+             src="https://github-camo.global.ssl.fastly.net/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+             alt="Fork me on GitHub"
+             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+      </a>
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style="margin-top: 50px;">
+          Everything is in version control from the <span class="text-muted">Git</span> go!
+        </h2>
+        <p class="lead">
+          Git is a free and open source distributed version control system designed to handle everything
+          from small to very large projects with speed and efficiency. New to Git?
+          <a href="http://try.github.io/levels/1/challenges/1">Try it!</a>
+        </p>
+        <p class="lead">
+          Already a git pro! Fork the project on <span class="text-muted">Github.</span>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive"
+             src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png"
+             alt="Generic placeholder image">
+      </div>
+    </div>
 
-        <!-- /END THE FEATURETTES -->
+    <!-- /END THE FEATURETTES -->
 
+    <!-- FOOTER -->
+    <footer>
+      <p class="pull-right"><a href="#top">Back to top</a></p>
+      <p>&copy; Shelby Sturgis. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
 
-        <!-- FOOTER -->
-        <footer>
-            <p class="pull-right"><a href="#top">Back to top</a></p>
-            <p>&copy; Shelby Sturgis. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-
-    </div><!-- /.container -->
+  </div><!-- /.container -->
 {% endblock %}
-

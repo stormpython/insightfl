@@ -1,5 +1,4 @@
-<script>
-    Reveal.initialize({
+ Reveal.initialize({
 
         // Display controls in the bottom right corner
         controls: true,
@@ -99,4 +98,3 @@
                 async: true, condition: function() { return !!document.body.classList; } }
         ]
     });
-</script>

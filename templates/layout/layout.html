@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!-- Revealjs core CSS -->
     <link href="{{ url_for('static', filename='vendor/components-revealjs/css/reveal.min.css') }}" rel="stylesheet">
 
+    <!-- Page specific CSS files -->
     {% block head %}{% endblock %}
 
     <!-- Genericons core CSS -->
@@ -56,9 +57,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+
     <div class="container">
-        {% block container %}{% endblock %}
+      <!-- Main content injection point -->
+      {% block container %}{% endblock %}
     </div>
+
+    <!-- Reveal Slides are placed within their own div within the html body -->
     {% block slides %}{% endblock %}
 
     <!-- Bootstrap core JavaScript
@@ -75,14 +80,15 @@
     <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
 
+    <!-- Page specific script files -->
     {% block scripts %}{% endblock %}
 
     <script type="text/javascript">
-        // Dynamically add the bootstrap 'active' class to navbar links
-        $(document).ready(function($){
-            var urlPath = window.location.pathname.split('/')[1];
-            $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
-        });
+      // Dynamically add the bootstrap 'active' class to navbar links.
+      $(document).ready(function($){
+        var urlPath = window.location.pathname.split('/')[1];
+          $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
+      });
     </script>
 
   </body>
