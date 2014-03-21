@@ -4,14 +4,14 @@
     <link href="{{ url_for('static', filename='vendor/components-revealjs/css/theme/default.css') }}" rel="stylesheet">
 {% endblock %}
 
-{% block body %}
+{% block slides %}
     <div class="reveal">
         <div class="slides">
             <section>
-                <h1>Scal<span class="di">di</span></h1>
-                <h3>Lightweight Dependency Injection Library</h3>
+                <h1>Reveal.js</h1>
+                <h3>HTML Presentations Made Easy</h3>
                 <p>
-                    <small><span class="bg-text">Created by</span>&nbsp;&nbsp;Oleg Ilyenko&nbsp;&nbsp;<a target="_blank" href="http://twitter.com/easyangel">@easyangel</a></small>
+                    <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
                 </p>
             </section>
 
@@ -168,11 +168,11 @@
                 <p>
                     Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
                 </p>
-                            <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-                                Reveal.addEventListener( 'customevent', function() {
-                                console.log( '"customevent" has fired' );
-                                } );
-                            </code></pre>
+                        <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+                            Reveal.addEventListener( 'customevent', function() {
+                            console.log( '"customevent" has fired' );
+                            } );
+                        </code></pre>
             </section>
 
             <section>
@@ -223,22 +223,22 @@
 
             <section>
                 <h2>Pretty Code</h2>
-                            <pre><code data-trim contenteditable>
-                                function linkify( selector ) {
-                                if( supports3DTransforms ) {
+                        <pre><code data-trim contenteditable>
+                            function linkify( selector ) {
+                            if( supports3DTransforms ) {
 
-                                var nodes = document.querySelectorAll( selector );
+                            var nodes = document.querySelectorAll( selector );
 
-                                for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-                                var node = nodes[i];
+                            for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+                            var node = nodes[i];
 
-                                if( !node.className ) {
-                                node.className += ' roll';
-                                }
-                                }
-                                }
-                                }
-                            </code></pre>
+                            if( !node.className ) {
+                            node.className += ' roll';
+                            }
+                            }
+                            }
+                            }
+                        </code></pre>
                 <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
             </section>
 
@@ -299,8 +299,7 @@
             <section>
                 <h2>Take a Moment</h2>
                 <p>
-                    Press b or period on your keyboard to enter the 'paused' mode.
-                    This mode is helpful when you want to take distracting slides off the screen
+                    Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
                     during a presentation.
                 </p>
             </section>
