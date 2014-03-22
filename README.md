@@ -8,8 +8,8 @@ InsightFL is a basic [Flask](http://flask.pocoo.org/) template to help those beg
 ### System Requirements
 * [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 * [node and npm](https://gist.github.com/isaacs/579814)
-  *For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
-   [site](http://www.joyent.com/blog/installing-node-and-npm/).*
+*For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
+ [site](http://www.joyent.com/blog/installing-node-and-npm/).*
 * [bower](http://bower.io)
 
     ```
@@ -54,7 +54,7 @@ Coming Soon!
   ./setup.sh
   ```
 
-3. Clone your project's repo (using https)
+3. Clone your project's repo (using https).
 
   ```
   git clone https://github.com/<username>/insightfl.git
@@ -65,7 +65,7 @@ Coming Soon!
   ```
   cd ~/insightfl
   bower install
-  sudo pip instal -r requirements.txt
+  sudo pip install -r requirements.txt
   ```
 
 5. Add your production settings to an environment variable.
