@@ -8,8 +8,10 @@ InsightFL is a basic [Flask](http://flask.pocoo.org/) template to help those beg
 ### System Requirements
 * [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 * [node and npm](https://gist.github.com/isaacs/579814)
-*For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
- [site](http://www.joyent.com/blog/installing-node-and-npm/).*
+
+  *For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
+  [site](http://www.joyent.com/blog/installing-node-and-npm/).*
+
 * [bower](http://bower.io)
 
     ```
