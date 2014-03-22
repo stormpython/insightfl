@@ -20,7 +20,6 @@
     "bootstrap": "~3.1.1",
     "jquery": "~2.1.0",
     "components-revealjs": "~2.6.1",
-    "d3": "~3.4.3",
     "Genericons": "https://github.com/Automattic/Genericons.git"
   }
 }
