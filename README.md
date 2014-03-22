@@ -17,6 +17,7 @@ InsightFL is a basic [Flask](http://flask.pocoo.org/) template to help those beg
     ```
     npm install -g bower
     ```
+
 ### Environment Setup
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
 2. Install Bower project dependencies.
