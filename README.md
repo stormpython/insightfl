@@ -47,7 +47,7 @@ environments.
 
 That's it! You are ready to start coding up your project.
 
-## Getting Started
+## Getting Started <a name="getting-started"></a>
 ### Quick Start
 Coming Soon!
 
