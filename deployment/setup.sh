@@ -2,14 +2,13 @@
 
 # Deployment Script for deploying to Ubuntu 12.04 Server
 
+# Installing git and git dependencies, pip, and curl
 sudo apt-get update
-sudo apt-get install python-pip mysql-server -y
-sudo apt-get build-dep python-mysqldb
-
+sudo apt-get build-dep git-core -y
+sudo apt-get install git-core python-pip curl -y
 sudo pip install pip --upgrade
-sudo pip install virtualenv
 
-sudo apt-get install curl make gcc g++
+# Installing node, npm, and bower
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 mkdir ~/.local/
@@ -19,6 +18,7 @@ curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
 ./configure --prefix=~/local
 make install
 curl https://www.npmjs.org/install.sh | sh
+npm install -g bower
 
-sudo apt-get build-deps git-core
-sudo apt-get install git-core
+# Change into home directory
+cd ~
