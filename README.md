@@ -152,6 +152,7 @@ Open up a browser, and paste in `http://127.0.0.1:5000/`. You should see the Ins
 Great! With that out of the way, we are ready to begin creating our data application.
 
 ## Deploying to AWS
+
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
 1. Secure copy the setup script (located in the deployment directory) to the remote host.
