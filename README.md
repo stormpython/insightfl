@@ -30,8 +30,8 @@ environments.
   npm install
   ```
 
-  *Note: if you are using your laptop as your dev environment, I recommend installing virtualenv before going on to step 3.
-  For more see [here](http://flask.pocoo.org/docs/installation/#virtualenv).
+  **Note: if you are using your laptop as your dev environment, I recommend installing virtualenv before going on to step 3.
+  For more see [here](http://flask.pocoo.org/docs/installation/#virtualenv).**
 
 3. Install Python project dependencies.
 
