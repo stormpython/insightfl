@@ -7,7 +7,7 @@ data scientists in the [Insight Data Science](http://insightdatascience.com/) pr
 off the ground quickly. As a former Insight fellow, I spent way too much time troubleshooting the ins and outs of
 web development instead of focusing on what truly mattered, extracting insight from my data.
 
-InsightFL comes with all the necessary tools you'll need to create your web app:
+InsightFL comes with all the necessary tools you'll need to create your web app quickly:
 
   1. Twitter Bootstrap for designing your web pages
   2. Bower to easily install third party libraries
@@ -19,21 +19,12 @@ environments.
 
 ## Installation
 ### System Requirements <a name="system-requirements"></a>
-* [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
-* [node and npm](https://gist.github.com/isaacs/579814)
-
-  *For a quick tutorial on how to install node and npm on Windows, Linux/Unix, or OSX visit this
-  [site](http://www.joyent.com/blog/installing-node-and-npm/).*
-
-* [bower](http://bower.io)
-
-    ```
-    npm install -g bower
-    ```
+1. [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
+2. [node](http://nodejs.org/) (make sure to install the packages that contain npm - Windows: .msi, MacOSX: .pkg)
 
 ### Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
-2. Install Bower and the project dependencies.
+2. Install node project dependencies.
 
   ```
   npm install
