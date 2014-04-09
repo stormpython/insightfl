@@ -33,10 +33,10 @@ environments.
 
 ### Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
-2. Install Bower project dependencies.
+2. Install Bower and the project dependencies.
 
   ```
-  bower install
+  npm install
   ```
 
 3. Install Python project dependencies.
