@@ -178,7 +178,7 @@ Great! With that out of the way, we are ready to begin creating our data applica
 
   ```
   cd ~/insightfl
-  bower install
+  npm install
   sudo pip install -r requirements.txt
   ```
 
