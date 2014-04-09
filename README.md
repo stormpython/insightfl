@@ -22,13 +22,16 @@ environments.
 1. [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 2. [node](http://nodejs.org/) (make sure to install the packages that contain npm - Windows: .msi, MacOSX: .pkg)
 
-#### Environment Setup <a name="environment-setup"></a>
+#### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
 2. Install node project dependencies.
 
   ```
   npm install
   ```
+
+*Note: if you are using your laptop as your dev environment, I recommend installing virtualenv before going on to step 3.
+For more see [here](http://flask.pocoo.org/docs/installation/#virtualenv).
 
 3. Install Python project dependencies.
 
@@ -39,7 +42,7 @@ environments.
 That's it! You are ready to start coding up your project.
 
 
-### Deploying to AWS
+### Deploying to AWS (Production Environment Setup)
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
