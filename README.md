@@ -17,12 +17,12 @@ InsightFL comes with all the necessary tools you'll need to create your web app 
 To get started building your web app, follow the instructions below to setup your development and production
 environments.
 
-## Getting Started <a name="getting-started"></a>
-### System Requirements <a name="system-requirements"></a>
+### Getting Started <a name="getting-started"></a>
+#### System Requirements <a name="system-requirements"></a>
 1. [Python](https://www.python.org/downloads/) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 2. [node](http://nodejs.org/) (make sure to install the packages that contain npm - Windows: .msi, MacOSX: .pkg)
 
-### Environment Setup <a name="environment-setup"></a>
+#### Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
 2. Install node project dependencies.
 
@@ -39,7 +39,7 @@ environments.
 That's it! You are ready to start coding up your project.
 
 
-## Deploying to AWS
+### Deploying to AWS
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
