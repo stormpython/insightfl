@@ -42,7 +42,7 @@ environments.
 That's it! You are ready to start coding up your project.
 
 
-### Deploying to AWS (Production Environment Setup)
+### Deploying to AWS
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
