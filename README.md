@@ -24,7 +24,7 @@ environments.
 
 #### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
-2. Install node project dependencies.
+2. Change into the project directory and install node project dependencies.
 
   ```
   npm install
