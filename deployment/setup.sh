@@ -9,10 +9,10 @@ sudo apt-get install git-core python-pip curl nginx -y
 sudo pip install pip --upgrade
 
 # Installing node and npm
-sudo apt-get install python-software-properties python g++ make
-sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get install python-software-properties python g++ make -y
+sudo add-apt-repository ppa:chris-lea/node.js -y
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get install nodejs -y
 
 # Change into home directory
 cd ~
