@@ -46,15 +46,16 @@ That's it! You are ready to start coding up your project.
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
-1. Secure copy the setup script (located in the deployment directory) to the remote host.
+1. Secure copy the setup script and nginx conf file (located in the deployment directory) to the remote host.
 
   ```
-  scp /path/to/deployment/setup.sh user@remoteip:~/
+  scp -i my-key.pem /path/to/setup.sh /path/to/nginx.conf ubuntu@ec2-54-187-26-65.us-west-2.compute.amazonaws.com:~
   ```
 
 2. SSH into the remote host and run the setup script.
 
   ```
+  ssh -i my-key.pem ubuntu@ec2ec2-54-187-26-65.us-west-2.compute.amazonaws.com
   sudo chmod 755 setup.sh
   ./setup.sh
   ```
@@ -73,13 +74,19 @@ That's it! You are ready to start coding up your project.
   sudo pip install -r requirements.txt
   ```
 
-5. Add your production settings to an environment variable.
+5. Add nginx configuration file and start nginx.
+
+  ```
+  sudo service nginx start
+  ```
+
+6. Add your production settings to an environment variable.
 
   ```
   export PROD_CONFIG="/path/to/settings/production.cfg"
   ```
 
-6. You should now be able to run your app!
+7. You should now be able to run your app!
 
   ```
   python app.py
