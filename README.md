@@ -1,5 +1,5 @@
 # InsightFL
-A basic template for building minimal flask applications.
+A basic template for building minimal web applications.
 
 ### Introduction
 InsightFL is a basic [Flask](http://flask.pocoo.org/) template created specifically to help budding
