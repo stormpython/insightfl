@@ -29,7 +29,7 @@ environments.
   side of your screen. Within the Settings box at the top of the screen, rename the repository and click `Rename`.
 
   ```
-  git clone git@github.com:<username>/insightfl.git
+  git clone git@github.com:<username>/<project>.git
   ```
 
 2. Change into the project directory and install node project dependencies.
@@ -77,13 +77,13 @@ That's it! You are ready to start coding your project.
 3. Clone your project's repo (using https).
 
   ```
-  git clone https://github.com/<username>/insightfl.git
+  git clone https://github.com/<username>/<project>.git
   ```
 
 4. Change into the project directory and install dependencies.
 
   ```
-  cd ~/insightfl
+  cd ~/project/directory
   npm install
   sudo pip install -r requirements.txt
   ```
