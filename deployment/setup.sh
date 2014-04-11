@@ -2,7 +2,7 @@
 
 # Deployment Script for deploying to Ubuntu 12.04 Server
 
-# Installing git and git dependencies, pip, and curl
+# Installing git, git dependencies, pip, curl and nginx
 sudo apt-get update
 sudo apt-get build-dep git-core -y
 sudo apt-get install git-core python-pip curl nginx -y
