@@ -24,6 +24,8 @@ environments.
 
 #### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
+  **Note:** It is helpful to change the repository name **before** cloning. In Github, click on `Settings` on the right-hand
+  side of your screen. Within the Settings box at the top of the screen, rename the repository and click `Rename`.
 
   ```
   git clone git@github.com:<username>/insightfl.git
