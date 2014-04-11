@@ -24,22 +24,33 @@ environments.
 
 #### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
+
+  ```
+  git clone git@github.com:<username>/insightfl.git
+  ```
+
 2. Change into the project directory and install node project dependencies.
 
   ```
+  cd /path/to/project/directory
   npm install
   ```
 
-  **Note: if you are using your laptop as your dev environment, I recommend installing virtualenv before going on to step 3.
-  For more see [here](http://flask.pocoo.org/docs/installation/#virtualenv).**
+3. Install virtualenv and fire up a virtual environment.
 
-3. Install Python project dependencies.
+  ```
+  sudo pip install virtualenv
+  virtualenv venv
+  source venv/bin/activate
+  ```
+
+4. Install Python project dependencies.
 
   ```
   pip install -r requirements.txt
   ```
 
-That's it! You are ready to start coding up your project.
+That's it! You are ready to start coding your project.
 
 
 ### Deploying to AWS
@@ -49,13 +60,13 @@ That's it! You are ready to start coding up your project.
 1. Secure copy the setup script and nginx conf file (located in the deployment directory) to the remote host.
 
   ```
-  scp -i my-key.pem /path/to/setup.sh /path/to/nginx.conf ubuntu@ec2-54-187-26-65.us-west-2.compute.amazonaws.com:~
+  scp -i my-key.pem /path/to/setup.sh /path/to/nginx.conf ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
 2. SSH into the remote host and run the setup script.
 
   ```
-  ssh -i my-key.pem ubuntu@ec2ec2-54-187-26-65.us-west-2.compute.amazonaws.com
+  ssh -i my-key.pem ubuntu@ec2ec2-12-345-67-89.us-west-2.compute.amazonaws.com
   sudo chmod 755 setup.sh
   ./setup.sh
   ```
