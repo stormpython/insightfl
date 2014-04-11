@@ -55,7 +55,6 @@ environments.
 
 That's it! You are ready to start coding your project.
 
-
 ### Deploying to AWS
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
@@ -69,7 +68,7 @@ That's it! You are ready to start coding your project.
 2. SSH into the remote host and run the setup script.
 
   ```
-  ssh -i my-key.pem ubuntu@ec2ec2-12-345-67-89.us-west-2.compute.amazonaws.com
+  ssh -i my-key.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
   sudo chmod 755 setup.sh
   ./setup.sh
   ```
@@ -100,9 +99,12 @@ That's it! You are ready to start coding your project.
   export PROD_CONFIG="/path/to/settings/production.cfg"
   ```
 
-7. You should now be able to run your app!
+7. You should now be able to run your app.
 
   ```
   python app.py
   ```
 
+ 8. Open up a web browser and enter your public DNS: `http://ec2-12-345-67-89.us-west-2.compute.amazonaws.com`.
+
+ That's it, you should now have a fully functioning web app!
