@@ -9,9 +9,9 @@ web development instead of focusing on what truly mattered, extracting insight f
 
 InsightFL comes with all the necessary tools you'll need to create your web app quickly:
 
-  1. [Twitter Bootstrap](http://getbootstrap.com/) for designing your web pages
-  2. [Bower](http://bower.io/) to easily install third party libraries
-  3. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML
+  1. [Twitter Bootstrap](http://getbootstrap.com/) for designing your web pages.
+  2. [Bower](http://bower.io/) to easily install third party libraries.
+  3. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML.
   4. And its already in version control from the [Git](http://git-scm.com/) go!
 
 To get started building your web app, follow the instructions below to setup your development and production
