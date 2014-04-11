@@ -105,6 +105,6 @@ That's it! You are ready to start coding your project.
   python app.py
   ```
 
-8. Open up a web browser and enter your public DNS: `http://ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
+8. Open up a web browser and enter your public DNS: `ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
 
 That's it, you should now have a fully functioning web app!
