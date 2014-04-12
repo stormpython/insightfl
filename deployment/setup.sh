@@ -8,6 +8,7 @@ sudo apt-get build-dep git-core -y
 sudo apt-get install git-core python-pip curl nginx mysql-server -y
 sudo apt-get build-dep python-mysqldb -y
 sudo pip install pip --upgrade
+sudo pip install MySQL-python
 
 # Installing node and npm
 sudo apt-get install python-software-properties python g++ make -y
