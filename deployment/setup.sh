@@ -2,10 +2,11 @@
 
 # Deployment Script for deploying to Ubuntu 12.04 Server
 
-# Installing git, git dependencies, pip, curl and nginx
+# Installing git, git dependencies, pip, curl, nginx, and mysql
 sudo apt-get update
 sudo apt-get build-dep git-core -y
-sudo apt-get install git-core python-pip curl nginx -y
+sudo apt-get install git-core python-pip curl nginx mysql-server -y
+sudo apt-get build-dep python-mysqldb -y
 sudo pip install pip --upgrade
 
 # Installing node and npm
