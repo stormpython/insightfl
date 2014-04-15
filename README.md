@@ -62,14 +62,13 @@ That's it! You are ready to start coding your project.
 1. Secure copy the setup script and nginx conf file (located in the deployment directory) to the remote host.
 
   ```
-  scp -i my-key.pem /path/to/setup.sh /path/to/nginx.conf ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
+  scp -i my-key.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
 2. SSH into the remote host and run the setup script.
 
   ```
   ssh -i my-key.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
-  sudo chmod 755 setup.sh
   ./setup.sh
   ```
 

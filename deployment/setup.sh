@@ -4,15 +4,21 @@
 
 # Installing git, git dependencies, pip, curl, nginx, MySQL, and MySQLdb
 sudo apt-get update
-sudo apt-get build-dep git-core -y
-sudo apt-get install git-core python-pip curl nginx mysql-server python-mysqldb -y
+sudo apt-get build-dep -y git-core
+sudo apt-get install -y git-core python-pip curl nginx mysql-server python-mysqldb
 sudo pip install pip --upgrade
 
 # Installing node and npm
-sudo apt-get install python-software-properties python g++ make -y
-sudo add-apt-repository ppa:chris-lea/node.js -y
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install nodejs -y
+sudo apt-get install -y nodejs
 
 # Change into home directory
-cd ~
+cd $HOME
+
+if [[ $1 ]]; then
+  PROJECT_DIR=$HOME/$1
+else
+
+
