@@ -30,7 +30,9 @@ if [[ username && project ]]; then
   sudo pip install -r requirements.txt
 
   # Setting up nginx
+  sudo rm /etc/nginx/sites-available/default
   sudo touch /etc/nginx/sites-available/insightfl
+
   sudo bash -c 'cat > /etc/nginx/sites-available/insightfl <<- _EOF_
   server {
     listen 80;
