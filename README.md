@@ -59,7 +59,7 @@ That's it! You are ready to start coding your project.
 
 *Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
 
-1. Secure copy the setup script and nginx conf file (located in the deployment directory) to the remote host.
+1. Secure copy the setup script (located in the deployment directory) to the remote host.
 
   ```
   scp -i my-key.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
