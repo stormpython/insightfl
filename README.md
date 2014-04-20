@@ -65,45 +65,14 @@ That's it! You are ready to start coding your project.
   scp -i my-key.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
-2. SSH into the remote host and run the setup script.
+2. SSH into the remote host and run the setup script. Answer the questions when prompted and wait for the downloads
+to finish.
 
   ```
   ssh -i my-key.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
-  ./setup.sh
+  bash setup.sh
   ```
 
-3. Clone your project's repo (using https).
-
-  ```
-  git clone https://github.com/<username>/<project>.git
-  ```
-
-4. Change into the project directory and install dependencies.
-
-  ```
-  cd ~/project/directory
-  npm install
-  sudo pip install -r requirements.txt
-  ```
-
-5. Add nginx configuration file and start nginx.
-
-  ```
-  sudo service nginx start
-  ```
-
-6. Add your production settings to an environment variable.
-
-  ```
-  export PROD_CONFIG="/path/to/settings/production.cfg"
-  ```
-
-7. You should now be able to run your app.
-
-  ```
-  python app.py
-  ```
-
-8. Open up a web browser and enter your public DNS: `ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
+3. Open up a web browser and enter your public DNS: `ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
 
 That's it, you should now have a fully functioning web app!
