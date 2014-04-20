@@ -54,6 +54,12 @@ environments.
   pip install -r requirements.txt
   ```
 
+5. To test your application: run the app.py file, and open your web browser to `localhost:5000`.
+
+  ```
+  python app.py
+  ```
+
 That's it! You are ready to start coding your project.
 
 ### Deploying to AWS
