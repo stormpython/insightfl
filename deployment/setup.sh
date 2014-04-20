@@ -45,8 +45,7 @@ if [[ username && project ]]; then
     location / {
       proxy_pass http://127.0.0.1:5000;
     }
-  }
-  _EOF_'
+  }'
 
   # Creating sudo link to sites-enabled & starting nginx
   sudo ln -s /etc/nginx/sites-available/insightfl /etc/nginx/sites-enabled/insightfl
