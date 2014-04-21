@@ -9,10 +9,17 @@ project=${project:="insightfl"}
 project_dir=$HOME/$project
 
 if [[ username && project ]]; then
-  # Installing git, git dependencies, pip, curl, nginx, MySQL, and MySQLdb
+  # Installing git, git dependencies, pip, curl, nginx
   sudo apt-get update
   sudo apt-get build-dep -y git-core
-  sudo apt-get install -y git-core python-pip curl nginx mysql-server python-mysqldb
+  sudo apt-get install -y git-core python-pip curl nginx
+
+  # Installing MySQL and MySQLdb
+  # Creates the default root MySQL password to 'root'
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+  sudo apt-get install -y mysql-server
+  sudo apt-get install -y python-mysqldb
   sudo pip install pip --upgrade
 
   # Installing node and npm
