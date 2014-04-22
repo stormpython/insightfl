@@ -59,7 +59,7 @@ if [[ username && project ]]; then
   sudo service nginx start
 
   # Starting the app
-  screen -d -m python app.py
+  screen -d -m python server.py
 
   # Change into home directory
   cd $HOME
