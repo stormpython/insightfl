@@ -14,6 +14,9 @@ if [[ username && project ]]; then
   sudo apt-get build-dep -y git-core
   sudo apt-get install -y git-core python-pip curl nginx
 
+  # Installing R
+  sudo apt-get install r-base-core
+
   # Installing the scipy stack
   sudo apt-get install  -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
