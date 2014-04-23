@@ -14,6 +14,9 @@ if [[ username && project ]]; then
   sudo apt-get build-dep -y git-core
   sudo apt-get install -y git-core python-pip curl nginx
 
+  # Installing the scipy stack
+  sudo apt-get install  -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
   # Installing MySQL and MySQLdb
   # Creates the default root MySQL password to 'root'
   sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
