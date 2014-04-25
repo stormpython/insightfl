@@ -1,6 +1,5 @@
 # imports
-from flask import Flask, request, redirect, url_for, \
-    render_template
+from flask import Flask, request, redirect, url_for, render_template
 
 # Creates our application.
 app = Flask(__name__)
