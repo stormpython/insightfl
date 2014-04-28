@@ -9,14 +9,9 @@ app = Flask(__name__)
 # Development settings - settings you'll use while developing your app.
 # These settings should not be used in production.
 app.config.from_pyfile('settings/development.cfg')
-
-# You will need to set the following env variable for production settings.
-# Run the following command in the terminal:
-# export PROD_CONFIG="/path/to/settings/production.cfg"
-app.config.from_envvar('PROD_CONFIG', silent=True)
 ################################################################################
 
-# INITIALIZE DATABASE
+# DATABASE SETTINGS
 ################################################################################
 host = app.config["DATABASE_HOST"]
 port = app.config["DATABASE_PORT"]

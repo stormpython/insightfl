@@ -54,29 +54,25 @@ environments.
   pip install -r requirements.txt
   ```
 
-5. To test your application: run the app.py file, and open your web browser to `localhost:5000`.
-
-  ```
-  python app.py
-  ```
+5. To test your application, run the app.py file: `python app.py`, and open your web browser to `localhost:5000`.
 
 That's it! You are ready to start coding your project.
 
 ### Deploying to AWS
 
-*Note: the setup script assumes you are deploying to an Ubuntu 12.04 Server*
+*Note: the setup script assumes you are deploying to an Ubuntu **12.04** Server*
 
 1. Secure copy the setup script (located in the deployment directory) to the remote host.
 
   ```
-  scp -i my-key.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
+  scp -i mykey.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
 2. SSH into the remote host and run the setup script. Answer the questions when prompted and wait for the downloads
 to finish.
 
   ```
-  ssh -i my-key.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
+  ssh -i mykey.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
   bash setup.sh
   ```
 
