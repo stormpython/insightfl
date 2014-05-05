@@ -1,5 +1,6 @@
 # imports
 from flask import Flask, request, redirect, url_for, render_template
+from helpers.database import con_db
 
 # Creates our application.
 app = Flask(__name__)
@@ -19,10 +20,10 @@ user = app.config["DATABASE_USER"]
 passwd = app.config["DATABASE_PASSWORD"]
 db = app.config["DATABASE_DB"]
 
-# db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
-# con = db.cursor()
-# con.execute("""SELECT * FROM user""")
-# results = con.fetchone()
+# Connect to database
+con = con_db(host, port, user, passwd, db)
+# Fetch database cursor
+cur = con.cursor()
 ################################################################################
 
 # ROUTING/VIEW FUNCTIONS
