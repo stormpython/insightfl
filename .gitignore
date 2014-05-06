@@ -1,5 +1,5 @@
 .DS_Store
 venv/
-app/static/vendor
+static/vendor
 node_modules
 *.pyc

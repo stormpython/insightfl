@@ -33,7 +33,7 @@ install_scipy () {
 
 install_mysql_and_mysqldb () {
     # Installs MySQL and MySQLdb
-    # Creates the default root MySQL password to 'root'
+    # Default root MySQL password = 'root'
     sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
     sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
     sudo apt-get install -y mysql-server
@@ -130,7 +130,7 @@ main () {
             main
         else
             read -p "Would you like to install MySQL [Y/n] > " mysql
-            read -p "Would you like to install the scipy stack [Y/n] > " scipy
+            read -p "Would you like to install the SCIPY stack [Y/n] > " scipy
             read -p "Would you like to install R [Y/n] >" rcore
 
             # Default package options
