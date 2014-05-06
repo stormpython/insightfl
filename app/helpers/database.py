@@ -1,6 +1,6 @@
-# imports
 import pymysql
 import sys
+
 
 # Returns MySQL database connection
 def con_db(host, port, user, passwd, db):

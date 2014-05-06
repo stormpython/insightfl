@@ -16,6 +16,7 @@ con = con_db(host, port, user, passwd, db)
 # cur = con.cursor()
 ################################################################################
 
+
 # ROUTING/VIEW FUNCTIONS
 @app.route('/')
 @app.route('/index')
