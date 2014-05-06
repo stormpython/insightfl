@@ -1,4 +1,4 @@
-# Example table schema
+-- Example table schema
 
 CREATE TABLE IF NOT EXISTS customers (
   cust_id INT NOT NULL AUTO_INCREMENT,
