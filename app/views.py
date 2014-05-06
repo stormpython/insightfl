@@ -1,16 +1,6 @@
-# imports
-from flask import Flask, request, redirect, url_for, render_template
-from helpers.database import con_db
-
-# Creates our application.
-app = Flask(__name__)
-
-# CONFIGURATION SETTINGS
-################################################################################
-# Development settings - settings you'll use while developing your app.
-# These settings should not be used in production.
-app.config.from_pyfile('settings/development.cfg')
-################################################################################
+from flask import render_template
+from app import app
+from app.helpers.database import con_db
 
 # DATABASE SETTINGS
 ################################################################################
@@ -23,11 +13,10 @@ db = app.config["DATABASE_DB"]
 # Connect to database
 con = con_db(host, port, user, passwd, db)
 # Fetch database cursor
-cur = con.cursor()
+# cur = con.cursor()
 ################################################################################
 
 # ROUTING/VIEW FUNCTIONS
-################################################################################
 @app.route('/')
 @app.route('/index')
 def index():
@@ -52,8 +41,3 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
-################################################################################
-
-# Runs the app.
-if __name__ == '__main__':
-    app.run(debug=True)

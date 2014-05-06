@@ -11,7 +11,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "static/vendor",
+    "app/static/vendor",
     "test",
     "tests"
   ],
