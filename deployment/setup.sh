@@ -97,7 +97,7 @@ setup_nginx () {
 
 start_app () {
     # Runs the app within a screen detached mode
-    screen -d -m python server.py
+    screen -d -m python production.py
 
     return
 }
