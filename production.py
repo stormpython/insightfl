@@ -1,4 +1,3 @@
-# imports
 from app import app
 
 # Production configuration settings
