@@ -111,13 +111,13 @@ main () {
     local scipy
     local rcore
 
-    read -p "Enter your github username > " username
+    read -p $'\e[32m'"Enter your github username > "$'\e[0m' username
 
     if [[ ! -n "$username" ]]; then
         echo $'\e[31m'"Please enter a github username"$'\e[0m'
         main
     else
-        read -p "Enter the github repository name [insightfl] > " project
+        read -p $'\e[32m'"Enter the github repository name [insightfl] > "$'\e[0m' project
 
         # Default project name is 'insightfl'
         project=${project:="insightfl"}
