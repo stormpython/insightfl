@@ -1,4 +1,7 @@
 -- Example table schema
+-- To import your schemas into your database, run:
+-- `mysql -u username -p < schema.sql`
+-- where username is your MySQL username
 
 CREATE TABLE IF NOT EXISTS customers (
   cust_id INT NOT NULL AUTO_INCREMENT,
