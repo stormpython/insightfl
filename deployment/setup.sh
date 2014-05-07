@@ -138,9 +138,9 @@ main () {
             scipy=${scipy:="y"}
             rcore=${rcore:="y"}
 
-            tr '[A-Z]' '[a-z]' < $mysql
-            tr '[A-Z]' '[a-z]' < $scipy
-            tr '[A-Z]' '[a-z]' < $rcore
+            mysql=$(echo $mysql | tr 'A-Z' 'a-z')
+            scipy=$(echo $scipy | tr 'A-Z' 'a-z')
+            rcore=$(echo $rcore | tr 'A-Z' 'a-z')
 
             install_global_dependencies
 
