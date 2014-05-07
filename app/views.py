@@ -1,21 +1,8 @@
 from flask import render_template
-from app import app
-from app.helpers.database import con_db
+from app import app, con
 
-# DATABASE SETTINGS
-################################################################################
-host = app.config["DATABASE_HOST"]
-port = app.config["DATABASE_PORT"]
-user = app.config["DATABASE_USER"]
-passwd = app.config["DATABASE_PASSWORD"]
-db = app.config["DATABASE_DB"]
-
-# Connect to database
-con = con_db(host, port, user, passwd, db)
 # Fetch database cursor
 # cur = con.cursor()
-################################################################################
-
 
 # ROUTING/VIEW FUNCTIONS
 @app.route('/')

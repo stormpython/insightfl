@@ -1,5 +1,5 @@
 
-## Tutorial
+## Checking System Requirements
 In this tutorial, we will create a data application. We will use the Twitter API to visualize
 tweets of [Flight MH370](http://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370) over time.
 
@@ -89,15 +89,17 @@ You should see something similar to this returned:
 Open up a browser, and paste in `http://127.0.0.1:5000/`. You should see the InsightFL index page.
 Great! With that out of the way, we are ready to begin creating our data application.
 
-## Directory Structure
-1. `deployment/` - contains bash script for deploying to Amazon AWS (Ubuntu 12.04)
-2. `helpers/` - stores your python helper scripts
-3. `settings/` - contains your app configuration files, e.g. development and production settings
-4. `static/` - contains all the css, images, javascript, and third party libraries
-5. `templates/` - contains all of your html files
-6. `.bowerrc` - bower configuration file (defines the directory where bower saves dependencies)
-7. `.gitignore` - git ignore file
-9. `app.py` - main flask/application script for rendering views
-10. `bower.json` - keeps track of your bower dependencies along with other project metadata
-11. `requirements.txt` - keeps track of your python dependencies
-12. `schema.sql` - SQL schema definitions
+## Root Directory Structure
+1. `app/`
+2. `deployment/` - contains example files and bash scripts to aid in deploying to Amazon AWS (Ubuntu 12.04)
+3. `docs/` - project documentation
+4. `.bowerrc` - Bower configuration file
+5. `.gitignore` - [Git ignore file](https://help.github.com/articles/ignoring-files)
+6. `bower.json`
+7. `development.py`
+8. `LICENSE.md`
+9. `package.json`
+10. `production.py`
+11. `README.md`
+12. `requirements.txt`
+13. `schema.sql`
