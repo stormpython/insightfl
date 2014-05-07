@@ -134,21 +134,25 @@ main () {
             read -p "Would you like to install R [Y/n] >" rcore
 
             # Default package options
-            mysql=${mysql:="Y" | tr '[:lower:]' '[:upper:]'}
-            scipy=${scipy:="Y" | tr '[:lower:]' '[:upper:]'}
-            rcore=${rcore:="Y" | tr '[:lower:]' '[:upper:]'}
+            mysql=${mysql:="y"}
+            scipy=${scipy:="y"}
+            rcore=${rcore:="y"}
+
+            tr '[A-Z]' '[a-z]' < $mysql
+            tr '[A-Z]' '[a-z]' < $scipy
+            tr '[A-Z]' '[a-z]' < $rcore
 
             install_global_dependencies
 
-            if [[ "$mysql" == "Y" ]]; then
+            if [[ "$mysql" == "y" ]]; then
                 install_mysql_and_mysqldb
             fi
 
-            if [[ "$scipy" == "Y" ]]; then
+            if [[ "$scipy" == "y" ]]; then
                 install_scipy
             fi
 
-            if [[ "$rcore" == "Y" ]]; then
+            if [[ "$rcore" == "y" ]]; then
                 install_rcore
             fi
 
