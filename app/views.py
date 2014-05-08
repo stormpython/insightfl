@@ -16,15 +16,15 @@ def home():
     # Renders home.html.
     return render_template('home.html')
 
-@app.route('/about')
+@app.route('/slides')
 def about():
-    # Renders about.html.
-    return render_template('about.html')
+    # Renders slides.html.
+    return render_template('slides.html')
 
-@app.route('/contact')
+@app.route('/author')
 def contact():
-    # Renders contact.html.
-    return render_template('contact.html')
+    # Renders author.html.
+    return render_template('author.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
