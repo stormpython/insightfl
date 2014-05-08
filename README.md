@@ -69,12 +69,11 @@ That's it! You are ready to start coding your project.
   scp -i mykey.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
-2. SSH into the remote host, export production.cfg as an environment variable, and run the setup script.
-Answer the questions when prompted and wait for the downloads to finish.
+2. SSH into the remote host and run the setup script. Answer the questions when prompted and wait for
+the downloads to finish.
 
   ```
   ssh -i mykey.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
-  export PRODUCTION_SETTINGS=/home/ubuntu/<your_repository_name>/app/settings/production.cfg
   bash setup.sh
   ```
 
