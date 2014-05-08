@@ -4,6 +4,7 @@ from app import app, con
 # Fetch database cursor
 # cur = con.cursor()
 
+
 # ROUTING/VIEW FUNCTIONS
 @app.route('/')
 @app.route('/index')
