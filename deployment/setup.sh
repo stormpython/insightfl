@@ -95,9 +95,18 @@ setup_nginx () {
     return
 }
 
+envvar_settings () {
+    local project_dir="$1"
+
+    # exports production settings file as env variable
+    export PRODUCTION_SETTINGS=$project_dir/app/settings/production.cfg
+
+    return
+}
+
 start_app () {
     # Runs the app within a screen detached mode
-    screen -d -m python production.py
+    screen -d -m python server.py
 
     return
 }
@@ -160,6 +169,7 @@ main () {
             clone_project $username $project
             install_project_dependencies $project_dir
             setup_nginx $project_dir
+            envvar_settings $project_dir
             start_app
 
             cd $HOME

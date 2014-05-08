@@ -54,7 +54,7 @@ environments.
   pip install -r requirements.txt
   ```
 
-5. To test your application, run the development.py file: `python development.py`, and open your web browser to
+5. To test your application, run the server.py file: `python server.py`, and open your web browser to
 `localhost:5000`.
 
 That's it! You are ready to start coding your project.

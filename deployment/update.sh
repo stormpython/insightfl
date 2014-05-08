@@ -12,4 +12,4 @@ sudo pip install -r requirements.txt
 
 # terminates the running screen and restarts
 screen -X quit
-screen -d -m python production.py
+screen -d -m python server.py
