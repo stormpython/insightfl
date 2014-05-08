@@ -99,7 +99,7 @@ envvar_settings () {
     local project_dir="$1"
 
     # exports production settings file as env variable
-    export PRODUCTION_SETTINGS=$project_dir/app/settings/production.cfg
+    export PRODUCTION_SETTINGS='$project_dir'/app/settings/production.cfg
 
     return
 }
