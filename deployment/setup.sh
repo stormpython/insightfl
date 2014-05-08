@@ -129,9 +129,9 @@ main () {
             echo $'\e[31m'"You've entered an invalid username or Github repository"$'\e[0m'
             main
         else
-            read -p $'\e[32m'"Would you like to install MySQL [Y/n] > "$'\e[0m' mysql
-            read -p $'\e[32m'"Would you like to install the SCIPY stack [Y/n] > "$'\e[0m' scipy
-            read -p $'\e[32m'"Would you like to install R [Y/n] > "$'\e[0m' rcore
+            read -p $'\e[32m'"Would you like to install MySQL? [Y/n] > "$'\e[0m' mysql
+            read -p $'\e[32m'"Would you like to install the SCIPY stack? [Y/n] > "$'\e[0m' scipy
+            read -p $'\e[32m'"Would you like to install R? [Y/n] > "$'\e[0m' rcore
 
             # Default package options
             mysql=${mysql:="y"}
