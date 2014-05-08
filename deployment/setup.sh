@@ -99,7 +99,7 @@ set_env_var () {
     local project_dir="$1"
 
     # sets the production settings path as an env variable
-    echo export PRODUCTION_SETTINGS='$project_dir'/app/settings/production.cfg >> $HOME/.bash_profile
+    echo export PRODUCTION_SETTINGS=$project_dir/app/settings/production.cfg >> $HOME/.bash_profile
     source $HOME/.bash_profile
 
     return
