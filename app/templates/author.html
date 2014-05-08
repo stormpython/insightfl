@@ -1,0 +1,27 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="https://pbs.twimg.com/profile_images/2606534517/1b8nfpzh7jxixkfax26i.jpeg"
+             class="img-responsive" height="300px" width="300px"/>
+        </div>
+        <div class="col-md-5">
+          <h1 class="text-justify text-muted">GET IN TOUCH</h1>
+          <p class="lead">I draw points on a canvas for a living, and in my former life I played with ants.</p>
+          <p class="lead">Sometimes I <a href="http://stormpython.me">blog</a>.</p>
+          <p class="lead">
+            Have feedback or want to contribute, submit a
+            <a href="https://github.com/stormpython/insightfl">pull request</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include "include/footer.html" %}
+{% endblock %}
