@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Deployment Script for deploying to Ubuntu 12.04 Server
+# Deployment Script for deploying to Ubuntu 14.04 Server
 
 install_global_dependencies () {
     # Installs git, git dependencies, pip, curl, nginx

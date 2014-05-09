@@ -61,7 +61,7 @@ That's it! You are ready to start coding your project.
 
 ### Deploying to AWS
 
-*Note: the setup script assumes you are deploying to an Ubuntu **12.04** Server*
+*Note: the setup script assumes you are deploying to an Ubuntu **14.04** Server*
 
 1. Secure copy the setup script (located in the deployment directory) to the remote host.
 
