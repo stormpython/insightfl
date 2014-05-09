@@ -65,6 +65,16 @@ install_project_dependencies () {
     return
 }
 
+set_env_var () {
+    local project_dir="$1"
+
+    # sets the production settings path as an env variable
+    echo export PRODUCTION_SETTINGS=$project_dir/app/settings/production.cfg >> $HOME/.bash_profile
+    source $HOME/.bash_profile
+
+    return
+}
+
 setup_nginx () {
     local project_dir="$1"
 
@@ -92,16 +102,6 @@ setup_nginx () {
 
     # Starts nginx
     sudo service nginx start
-
-    return
-}
-
-set_env_var () {
-    local project_dir="$1"
-
-    # sets the production settings path as an env variable
-    echo export PRODUCTION_SETTINGS=$project_dir/app/settings/production.cfg >> $HOME/.bash_profile
-    source $HOME/.bash_profile
 
     return
 }
@@ -173,8 +173,8 @@ main () {
             # Clones project, installs dependencies, setups nginx, and starts app
             clone_project $username $project
             install_project_dependencies $project_dir
-            setup_nginx $project_dir
             set_env_var $project_dir
+            setup_nginx $project_dir
             start_app $project_dir
 
             cd $HOME
