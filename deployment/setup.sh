@@ -70,6 +70,7 @@ setup_nginx () {
 
     # Replaces the nginx default file
     sudo rm /etc/nginx/sites-available/default
+    sudo rm /etc/nginx/sites-enabled/default
     sudo touch /etc/nginx/sites-available/insightfl
 
     sudo bash -c 'cat > /etc/nginx/sites-available/insightfl <<- _EOF_
@@ -106,7 +107,10 @@ set_env_var () {
 }
 
 start_app () {
+    local project_dir="$1"
+
     # Runs the app within a screen detached mode
+    cd $project_dir
     screen -d -m python server.py
 
     return
@@ -171,7 +175,7 @@ main () {
             install_project_dependencies $project_dir
             setup_nginx $project_dir
             set_env_var $project_dir
-            start_app
+            start_app $project_dir
 
             cd $HOME
         fi
