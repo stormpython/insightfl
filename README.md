@@ -74,7 +74,7 @@ the downloads to finish.
 
   ```
   ssh -i mykey.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
-  bash setup.sh
+  source setup.sh
   ```
 
 3. Open up a web browser and enter your public DNS: `ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
