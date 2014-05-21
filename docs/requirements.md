@@ -3,6 +3,7 @@
 2. Download and Install [Git](https://help.github.com/articles/set-up-git).
 3. Add an [SSH Key](https://help.github.com/articles/generating-ssh-keys) to your Github account.
 4. Sign up for AWS.
+
     Step-by-step Instructions:
     1.  Open a web browser.
     2.  Go to the URL [aws.amazon.com](http://aws.amazon.com/). The AWS home page appears, containing an eye-catching "Sign Up Now" button.
@@ -12,9 +13,11 @@
     6.  Find your credit card and fill in the payment form.
     7.  Fill in the identity verification form. I received an automated message on my phone and had to type in a PIN displayed in the web browser. A confirmation page appears. I also received a "welcome" e-mail, but did not have to click on any activation link to make my account active.
     8.  Close the web browser.
+
 5. Install [Python](https://www.python.org/downloads/) if it is not already installed.
 6. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
 7. Install [node](http://nodejs.org/download/).
+
     Windows users - install the **.msi** Installer.
     Mac OS X users - install the Universal (**.pkg**) Installer.
     Linux users - visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
