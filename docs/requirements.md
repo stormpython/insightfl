@@ -1,4 +1,7 @@
 # Installing Requirements
+**Windows Users** - Please note that it is highly recommended that you install [Cygwin](https://www.cygwin.com/install.html)
+in order to follow along with Unix based commands.
+
 1. Sign up for a free [Github](https://help.github.com/articles/signing-up-for-a-new-github-account) account.
 2. Download and Install [Git](https://help.github.com/articles/set-up-git).
 3. Add an [SSH Key](https://help.github.com/articles/generating-ssh-keys) to your Github account.
@@ -18,4 +21,5 @@
     * Windows users - install the **.msi** Installer.
     * Mac OS X users - install the Universal (**.pkg**) Installer.
     * Linux users - visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
+
 
