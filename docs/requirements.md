@@ -15,7 +15,6 @@
 5. Install [Python](https://www.python.org/downloads/) if it is not already installed.
 6. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
 7. Install [node](http://nodejs.org/download/).
-
     * Windows users - install the **.msi** Installer.
     * Mac OS X users - install the Universal (**.pkg**) Installer.
     * Linux users - visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
