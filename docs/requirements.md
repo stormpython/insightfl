@@ -47,6 +47,6 @@ installed in* **Mac OS X** and **Linux**.
 ## Fork, Clone the Project
 You should now be ready to fork and clone the project from Github. Forking a project on Github is simple. Simply sign into
 you Github account. Then visit this [link](https://github.com/stormpython/insightfl). In the upper right hand corner of
-your screen, click on `Fork` icon.
+your screen, click on the `Fork` icon.
 
 Finally, follow the instructions in the [Getting Started](https://github.com/stormpython/insightfl#getting-started) guide.
