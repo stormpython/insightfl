@@ -30,15 +30,15 @@ click on any activation link to make my account active.
 ## System Requirements
 ### Python
 1. Install [Python](https://www.python.org/downloads/) if it is not already installed. *By default python comes
-installed in **Mac OS X** and **Linux**.*
+installed in* **Mac OS X** and **Linux**.
 2. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
 
 ### Node/npm
 3. Install [node](http://nodejs.org/download/).
 
-    * Windows users: install the **.msi** Installer.
-    * Mac OS X users: install the Universal (**.pkg**) Installer.
-    * Linux users: visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
+    * **Windows users**: install the **.msi** Installer.
+    * **Mac OS X users**: install the Universal (**.pkg**) Installer.
+    * **Linux users**: visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
 ### MySQL
 1. Install [MySQL](http://dev.mysql.com/downloads/mysql/).
