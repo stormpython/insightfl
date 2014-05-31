@@ -28,20 +28,23 @@ click on any activation link to make my account active.
 8.  Close the web browser.
 
 ## System Requirements
+### Python
 1. Install [Python](https://www.python.org/downloads/) if it is not already installed. *By default python comes
 installed in **Mac OS X** and **Linux**.*
 2. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
+
+### Node/npm
 3. Install [node](http://nodejs.org/download/).
 
     * Windows users: install the **.msi** Installer.
     * Mac OS X users: install the Universal (**.pkg**) Installer.
     * Linux users: visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
-## MySQL
+### MySQL
 1. Install [MySQL](http://dev.mysql.com/downloads/mysql/).
 *Note: If you have a 64-bit computer, you should install the 64-bit version.*
 
-## Fork and Clone the Project
+## Fork, Clone the Project
 You should now be ready to fork and clone the project from Github. Forking a project on Github is simple. Simply sign into
 you Github account. Then visit this [link](https://github.com/stormpython/insightfl). In the upper right hand corner of
 your screen, click on `Fork` icon.
