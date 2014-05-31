@@ -1,10 +1,10 @@
 {% extends "layout/base.html" %}
 
 {% block head %}
-    <link href="{{ url_for('static', filename='vendor/components-revealjs/css/theme/default.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/components-revealjs/css/theme/default.css') }}" rel="stylesheet">
 {% endblock %}
 
-{% block slides %}
+{% block content %}
   <div class="reveal">
     <div class="slides">
       <section>
@@ -322,5 +322,8 @@
 {% endblock %}
 
 {% block scripts %}
+  <!-- Presentation Libraries -->
+  <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
 {% endblock %}

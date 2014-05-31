@@ -1,0 +1,51 @@
+{% extends "layout/base.html" %}
+
+{% block head %}
+  <link href="{{ url_for('static', filename='css/world.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div id="wrap">
+    <div class="container">
+      <div id="chart"></div>
+      <div id="tooltip" class="hidden">
+        <p style="text-align: center;"><strong>World Index</strong></p>
+        <p><span id="value"></span></p>
+      </div>
+      <div id="table">
+        <div class="table-responsive">
+          <table class="table table-bordered table-condensed table-striped">
+            <thead>
+            <th>Country</th>
+            <th>Education Index</th>
+            <th>Median Age</th>
+            <th>GDP</th>
+            </thead>
+            <tbody>
+            {% for line in data %}
+            <tr>
+              <td>{{line.country}}</td>
+              <td>{{line.edu_index}}</td>
+              <td>{{line.median_age}}</td>
+              <td>{{line.gdp}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include "include/footer.html" %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script>
+    var data = {{ data | safe }};
+  </script>
+  <script src="{{ url_for('static', filename='js/bubblechart.js') }}"></script>
+{% endblock %}

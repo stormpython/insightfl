@@ -1,8 +1,6 @@
-from flask import render_template
+from flask import render_template, jsonify
 from app import app, con
-
-# Fetch database cursor
-# cur = con.cursor()
+from app.helpers.database import world_index
 
 
 # ROUTING/VIEW FUNCTIONS
@@ -11,6 +9,12 @@ from app import app, con
 def index():
     # Renders index.html.
     return render_template('index.html')
+
+@app.route('/world')
+def world():
+    # Renders page with world data
+    data = world_index(con)
+    return render_template('world.html', data=data)
 
 @app.route('/home')
 def home():

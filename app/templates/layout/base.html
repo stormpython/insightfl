@@ -25,7 +25,6 @@
     <!-- Your custom styles -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,10 +58,9 @@
     </div>
 
     <!-- Main content injection point -->
+    <!-- Within the content block, wrap content with <div id="wrap"><div>
+          when using the footer block to push the footer down. -->
     {% block content %}{% endblock %}
-
-    <!-- Reveal Slides are placed within their own div within the html body -->
-    {% block slides %}{% endblock %}
 
     <!-- The footer is placed within its own block to render properly -->
     {% block footer %}{% endblock %}
@@ -73,12 +71,6 @@
     <script src="{{ url_for('static', filename='vendor/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-    <!-- Charting Libraries -->
-
-    <!-- Presentation Libraries -->
-    <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
 
     <!-- Page specific script files -->
     {% block scripts %}{% endblock %}
