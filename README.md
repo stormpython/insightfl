@@ -21,7 +21,6 @@ environments.
 #### System Requirements <a name="system-requirements"></a>
 1. [Python](https://www.python.org/downloads/)(v2.7+) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 2. [node](http://nodejs.org/)(v0.10.26+) - make sure to install the packages with [npm](https://www.npmjs.org/): Windows: *.msi*, MacOSX: *.pkg*
-3. [Git](https://help.github.com/articles/set-up-git)
 
 #### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
