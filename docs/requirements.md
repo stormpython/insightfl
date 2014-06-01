@@ -2,8 +2,9 @@
 **Windows Users**:  *Please note that it is highly recommended that you first install
 [Cygwin](https://www.cygwin.com/install.html) in order to follow along with Unix based commands.*
 
-**Mac OS X Users**: *Please be sure to install the latest version of Xcode from the Mac App Store. Xcode 5.x should come
-with command line tools already installed. If these are already installed on your system, you can skip this step.*
+**Mac OS X Users**: *Please be sure to install
+[Xcode and command line tools](http://stackoverflow.com/questions/9329243/xcode-4-4-and-later-install-command-line-tools).
+If these are already installed on your system, you can skip this step.*
 
 ## Accounts Setup
 ### Github
@@ -34,7 +35,7 @@ installed in* **Mac OS X** and **Linux**.
 2. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
 
 ### Node/npm
-3. Install [node](http://nodejs.org/download/).
+3. Install [node](http://nodejs.org/download/) with npm.
 
     * **Windows users**: install the **.msi** Installer.
     * **Mac OS X users**: install the Universal (**.pkg**) Installer.
