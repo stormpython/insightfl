@@ -10,7 +10,7 @@ install_global_dependencies () {
 
     # Installs node and npm
     sudo apt-get install -y python-software-properties python g++ make
-    sudo add-apt-repository -y ppa:chris-lea/node.js
+    #sudo add-apt-repository -y ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install -y nodejs
 
@@ -93,7 +93,7 @@ setup_nginx () {
       server_name "";
 
       location / {
-        proxy_pass http://127.0.0.1:5000;
+        proxy_pass http://127.0.0.1:8000;
       }
     }'
 
@@ -111,7 +111,7 @@ start_app () {
 
     # Runs the app within a screen detached mode
     cd $project_dir
-    screen -d -m python server.py
+    screen -d -m gunicorn app:app
 
     return
 }
