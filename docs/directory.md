@@ -10,7 +10,7 @@
 9. `bower.json` - Bower configuration file
 10. `package.json` - Node configuration File
 11. `README.md` - Getting started guide
-12. `requirements.txt` - Python dependency file
+12. `requirements.txt` - Python dependencies file
 13. `schema.sql` - MySQL schema
 14. `server.py` - Flask development script file
 
