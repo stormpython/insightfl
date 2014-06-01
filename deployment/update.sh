@@ -9,7 +9,3 @@ git pull origin master
 # Installs project dependencies
 npm install
 sudo pip install -r requirements.txt
-
-# terminates the running screen and restarts
-screen -X quit
-screen -d -m python server.py
