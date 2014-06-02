@@ -28,6 +28,6 @@ passwd = app.config["DATABASE_PASSWORD"]
 db = app.config["DATABASE_DB"]
 
 # Create database connection
-con = con_db(host, port, user, passwd, db)
+# con = con_db(host, port, user, passwd, db)
 
 from app import views
