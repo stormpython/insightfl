@@ -20,7 +20,7 @@
 
 ## Flask
 * [app](http://flask.pocoo.org/docs/patterns/packages/)
-* server.py - Flask web server which imports the web app from the app directory
+* server.py - Flask local development web server.
 
 ## Node, npm, Bower
 * [node_modules](https://www.npmjs.org/doc/files/npm-folders.html)
@@ -32,10 +32,10 @@
 * [.gitignore](https://help.github.com/articles/ignoring-files)
 
 ## MySQL
-* schema.sql -
+* schema.sql - MySQL table schemas.
 
 ## Docs
-* docs - Project documentation
+* docs - Project's documentation.
 * [LICENSE.md](http://en.wikipedia.org/wiki/MIT_License)
 * [README.md](https://github.com/stormpython/insightfl/blob/master/README.md)
 
