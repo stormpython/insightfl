@@ -15,11 +15,11 @@
 14. `server.py` - Flask development script file
 
 ## Python
-* venv
-* requirements.txt
+* [venv](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+* [requirements.txt](https://pip.pypa.io/en/1.1/requirements.html)
 
 ## Flask
-* app
+* [app](http://flask.pocoo.org/docs/patterns/packages/)
 * server.py
 
 ## Node, npm, Bower

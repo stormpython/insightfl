@@ -40,6 +40,8 @@ installed in* **Mac OS X** and **Linux**.
     * **Windows users**: install the **.msi** Installer.
     * **Mac OS X users**: install the Universal (**.pkg**) Installer.
     * **Linux users**: visit this [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
+    *This program relies on the `node` binary, so you'll need to install the legacy version or create a symlink from
+    `/usr/bin/node` to `/usr/bin/nodejs`.*
 
 ### MySQL
 1. Install [MySQL](http://dev.mysql.com/downloads/mysql/).
