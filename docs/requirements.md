@@ -47,6 +47,10 @@ installed in* **Mac OS X** and **Linux**.
 1. Install [MySQL](http://dev.mysql.com/downloads/mysql/).
 *Note: If you have a 64-bit computer, you should install the 64-bit version.*
 
+* **Windows/Linux Users**: A powerful tool to help with managing your MySQL Databases is
+[MySQL Workbench](http://www.mysql.com/products/workbench/).
+* **Mac OS X Users**: Mac users should download [Sequel Pro](http://www.sequelpro.com/).
+
 ## Fork, Clone the Project
 You should now be ready to fork and clone the project from Github. Forking a project on Github is simple. Simply sign into
 you Github account. Then visit this [link](https://github.com/stormpython/insightfl). In the upper right hand corner of
