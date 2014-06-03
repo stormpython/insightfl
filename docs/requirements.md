@@ -49,7 +49,8 @@ installed in* **Mac OS X** and **Linux**.
 
     * **Windows/Linux users**: A powerful tool to help with managing your MySQL Databases is
     [MySQL Workbench](http://www.mysql.com/products/workbench/).
-    * **Mac OS X users**: Mac users should download [Sequel Pro](http://www.sequelpro.com/).
+    * **Mac OS X users**: Mac users should download the **Mac OS X 10.x DMG Archive**.
+    In addition, [Sequel Pro](http://www.sequelpro.com/) is a great tool for managing your MySQL databases for Macs.
 
 ## Fork, Clone the Project
 You should now be ready to fork and clone the project from Github. Forking a project on Github is simple. Simply sign into
