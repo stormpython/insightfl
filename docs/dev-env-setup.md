@@ -25,4 +25,5 @@
     of the screen.
     * Follow the [Dev Environment Setup](https://github.com/stormpython/insightfl#dev-environment-setup-) guide.
 
-After you've completed setting up your development environment, go to the [Deploying to AWS]() guide.
+After you've completed setting up your development environment, go to the
+[Deploying to AWS](https://github.com/stormpython/insightfl#deploying-to-aws) guide.
