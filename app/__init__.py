@@ -1,6 +1,5 @@
 # imports
 from flask import Flask
-from app.helpers.database import con_db
 
 # Creates our application.
 app = Flask(__name__)
@@ -27,7 +26,5 @@ user = app.config["DATABASE_USER"]
 passwd = app.config["DATABASE_PASSWORD"]
 db = app.config["DATABASE_DB"]
 
-# Create database connection
-# con = con_db(host, port, user, passwd, db)
 
 from app import views
