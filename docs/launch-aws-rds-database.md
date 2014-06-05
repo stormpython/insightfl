@@ -46,4 +46,6 @@ option.** You can allocate up to *30GB* of storage. Fill in an identifier, usern
     mysql -h myinstance.123456789012.us-east-1.rds.amazonaws.com -P 3306 -u mymasteruser -p
     ```
 
+    where -h is your database endpoint, -P is the port number, and -u is your username.
+
 12. Congratulations! You have launched your RDS database.
