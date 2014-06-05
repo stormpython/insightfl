@@ -26,4 +26,5 @@
     * Follow the [Dev Environment Setup](https://github.com/stormpython/insightfl#dev-environment-setup-) guide.
 
 After you've completed setting up your development environment, go to the
-[Deploying to AWS](https://github.com/stormpython/insightfl#deploying-to-aws) guide.
+[Launching an Amazon AWS EC2 Instance](https://github.com/stormpython/insightfl/blob/master/docs/launch-aws-ec2-instance.md#launching-an-amazon-aws-ec2-instance)
+guide.
