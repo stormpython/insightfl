@@ -68,6 +68,9 @@ That's it! You are ready to start coding your project.
   scp -i mykey.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
   ```
 
+  where `mykey.pem` is your downloaded key pair from Amazon and `@ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
+  is your Amazon EC2 Public DNS.
+
 2. SSH into the remote host and run the setup script. Answer the questions when prompted and wait for
 the downloads to finish.
 
