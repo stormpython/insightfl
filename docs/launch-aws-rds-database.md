@@ -3,8 +3,11 @@
 1. Create an [Amazon AWS](http://aws.amazon.com/) account and sign in. Visit this
 [link](https://github.com/stormpython/insightfl/blob/master/docs/requirements.md#amazon-aws)
 for account creation instructions.
-2. Sign in to your [Amazon AWS](http://aws.amazon.com/) account.
-3. From the *Console Home*, click on the `RDS` icon.
+2. Navigate to the `AWS Management Console`.
+
+    ![Alt text](images/aws-management-console.png)
+
+3. Click on the `RDS` icon.
     ![Alt text](images/rds.png)
 
 4. Click on `Launch a DB Instance`.
