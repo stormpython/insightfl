@@ -4,7 +4,6 @@
 [link](https://github.com/stormpython/insightfl/blob/master/docs/requirements.md#amazon-aws)
 for account creation instructions.
 2. Navigate to the `AWS Management Console`.
-
     ![Alt text](images/aws-management-console.png)
 
 3. Click on the `RDS` icon.
