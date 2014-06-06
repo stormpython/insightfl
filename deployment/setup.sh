@@ -100,9 +100,6 @@ setup_nginx () {
     # Creates a sudo link to sites-enabled
     sudo ln -s /etc/nginx/sites-available/insightfl /etc/nginx/sites-enabled/insightfl
 
-    # Starts nginx
-    sudo service nginx start
-
     return
 }
 
@@ -112,6 +109,9 @@ start_app () {
     # Runs the app within a screen detached mode
     cd $project_dir
     screen -d -m gunicorn app:app
+
+    # Starts nginx
+    sudo service nginx start
 
     return
 }
