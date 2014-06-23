@@ -1,0 +1,19 @@
+{% extends "layout/base.html" %}
+{% block content %}
+	<div id="wrap">
+        <!--<div class="col-lg-4"> -->
+        <div class="container">		
+<p style="text-shadow:5px 2px 0 rgba(4,182,201,1);font-weight:normal;color:#000000;letter-spacing:6pt;word-spacing:0pt;font-size:120px;text-align:left;font-family:helvetica, sans-serif;line-height:1;">{SetList]</p>
+
+                    <H3 style="font-family:helvetica;margin-left:150px"> Set your life to music. </H3>
+                    <form method="post" action="/getplaylistinfo" style=margin-left:150px>
+			            <input type="text" name="query" placeholder="Input a Beats Music playlist ID">
+			            <input type="submit"/>
+		            </form>
+
+        </div>
+	</div>
+	<br>
+	<br>
+
+{% endblock %}

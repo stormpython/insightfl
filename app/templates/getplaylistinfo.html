@@ -1,0 +1,28 @@
+{% extends 'layout/base.html'%}
+{% block content %}
+<div id='wrap'>
+	<h3>
+	The following songs from Playlist {{query}} are in the EchoNest database:
+	</h3>
+    
+
+    <ul>
+    {% for title in playlist %}
+        <li> {{title}} </li>
+    {% endfor %}
+    </ul>
+
+    <p>
+    Would you like to continue?
+    <p>
+
+    <form action="/generatedistance">
+        <button type="submit">Take me to the music!</button>
+    </form>
+
+
+
+</div>
+
+
+{% endblock %}

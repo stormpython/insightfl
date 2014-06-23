@@ -1,0 +1,55 @@
+#http://developer.echonest.com/api/v4/track/profile?
+
+from urllib2 import urlopen
+import sys
+print sys.path
+#kittens = urlopen('http://placekitten.com/200/300')
+#equivalent to
+#kittens = requests.get('http://placekitten.com/') if using import requests
+
+
+#using requests library
+import requests
+
+#to parse JSON, import json module
+import json
+from json import load
+
+#prettyprint
+from pprint import pprint
+
+#declare variable for Echonest api key
+echokey = "W89S7QJCCHFARWJGD"
+
+
+#declare variable for base url
+url = "http://developer.echonest.com/api/v4/track/profile?api_key="
+
+#append api key
+url = url + echokey
+
+#append parameters
+url = url + "&format=json&id=TRTLKZV12E5AC92E11&bucket=audio_summary"
+
+response = urlopen(url)
+json_obj = load(response)
+pprint(json_obj)
+for property, value in vars(json_obj).iteritems():
+    print property, ":", value
+
+#json_encoded = json.dumps(json_obj)
+#pprint(json_encoded)
+
+# store values
+
+response = requests.get(url)
+json_data = json.loads(response.json())
+print json_data
+
+
+
+
+
+
+
+
