@@ -1,0 +1,16 @@
+{% extends 'layout/base.html'%}
+{% block content %}
+<div id='wrap'>
+	<h3>
+Analyzing playlist {{query}}, please wait...
+	</h3>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 60%;">
+        <span class="sr-only">60% Complete</span>
+      </div>
+    </div>
+    <form method="post" action="/progressbar">
+</div>
+
+
+{% endblock %}

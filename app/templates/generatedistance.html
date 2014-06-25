@@ -1,0 +1,17 @@
+
+{% extends 'layout/base.html'%}
+{% block content %}
+<div id='wrap' style="margin:100px">
+	<h3> That&#39;s one sexy playlist!
+    </h3>
+    <ol>
+    {% for song in myvariables[0][0] %}
+        <li> {{song}} </li>
+    {% endfor %}
+    </ol>
+
+
+</div>
+
+
+{% endblock %}
