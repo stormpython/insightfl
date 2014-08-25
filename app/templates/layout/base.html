@@ -45,12 +45,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><span>InsightFL</span></a>
+          <a class="navbar-brand" href="index"><span>InsightFL</span></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="home">Home</a></li>
-            <li><a href="slides">Slides</a></li>
+            <li><a href="index">Home</a></li>
+            <li><a href="presentation">Presentation</a></li>
             <li><a href="author">Author</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -79,7 +79,9 @@
       // Dynamically add the bootstrap 'active' class to navbar links.
       $(document).ready(function($){
         var urlPath = window.location.pathname.split('/')[1];
-          $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
+        // if urlPath is empty, redefine to the string 'index'
+        urlPath === '' ? urlPath = 'index' : urlPath = urlPath;
+        $('.nav a[href="'+ urlPath +'"]').parent().addClass('active');
       });
     </script>
 

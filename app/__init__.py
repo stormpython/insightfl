@@ -1,30 +1,22 @@
 # imports
 from flask import Flask
+from config import config
 
-# Creates our application.
-app = Flask(__name__)
+def create_app(config_name):
 
-# Development configuration settings
-# WARNING - these should not be used in production
-app.config.from_pyfile('settings/development.cfg')
+    # Creates our application.
+    app = Flask(__name__)
+    app.config.from_object(config[config_name])
+    config[config_name].init_app(app)
 
-# Production configuration settings
-# To have these override your development settings,
-# you'll need to set your environment variable to
-# the file path:
-# export PRODUCTION_SETTINGS=/path/to/settings.cfg
-app.config.from_envvar('PRODUCTION_SETTINGS', silent=True)
+    # DATABASE SETTINGS
+    host = app.config["DATABASE_HOST"]
+    port = app.config["DATABASE_PORT"]
+    user = app.config["DATABASE_USER"]
+    passwd = app.config["DATABASE_PASSWORD"]
+    db = app.config["DATABASE_DB"]
 
-# Application DEBUG - should be True in development
-# and False in production
-app.debug = app.config["DEBUG"]
+    from main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
 
-# DATABASE SETTINGS
-host = app.config["DATABASE_HOST"]
-port = app.config["DATABASE_PORT"]
-user = app.config["DATABASE_USER"]
-passwd = app.config["DATABASE_PASSWORD"]
-db = app.config["DATABASE_DB"]
-
-
-from app import views
+    return app
