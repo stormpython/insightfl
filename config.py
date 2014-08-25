@@ -1,6 +1,7 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
     DATABASE_HOST = "localhost"
@@ -12,9 +13,11 @@ class Config:
     def init_app(app):
         pass
 
+
 class DevelopmentConfig(Config):
     DEBUG = True
     DATABASE_DB = ""
+
 
 class ProductionConfig(Config):
     DEBUG = False
