@@ -29,7 +29,7 @@ To get started building your web app, follow the instructions below to setup you
   git clone git@github.com:<username>/<project>.git
   ```
 
-2. Install virtualenv and fire up a virtual environment.
+2. **Recommended:** Install virtualenv and fire up a virtual environment.
 
   ```
   sudo pip install virtualenv
