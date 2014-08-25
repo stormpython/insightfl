@@ -10,9 +10,8 @@ web development instead of focusing on what truly mattered, extracting insight f
 InsightFL comes with all the necessary tools you'll need to create your web app quickly:
 
   1. [Twitter Bootstrap](http://getbootstrap.com/) for designing your web pages.
-  2. [Bower](http://bower.io/) to easily install third party libraries.
-  3. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML.
-  4. And its already in version control from the [Git](http://git-scm.com/) go!
+  2. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML.
+  3. And its already in version control from the [Git](http://git-scm.com/) go!
 
 To get started building your web app, follow the instructions below to setup your development and production
 environments.
@@ -20,7 +19,6 @@ environments.
 ### Getting Started <a name="getting-started"></a>
 #### System Requirements <a name="system-requirements"></a>
 1. [Python](https://www.python.org/downloads/)(v2.7+) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
-2. [node](http://nodejs.org/)(v0.10.26+) - make sure to install the packages with [npm](https://www.npmjs.org/): Windows: *.msi*, MacOSX: *.pkg*
 
 #### Dev Environment Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
@@ -32,14 +30,7 @@ environments.
   git clone git@github.com:<username>/<project>.git
   ```
 
-2. Change into the project directory and install node project dependencies.
-
-  ```
-  cd /path/to/project/directory
-  npm install
-  ```
-
-3. Install virtualenv and fire up a virtual environment.
+2. Install virtualenv and fire up a virtual environment.
 
   ```
   sudo pip install virtualenv
@@ -47,38 +38,13 @@ environments.
   source venv/bin/activate
   ```
 
-4. Install Python project dependencies.
+3. Install Python project dependencies.
 
   ```
   pip install -r requirements.txt
   ```
 
-5. To test your application, run the server.py file: `python server.py`, and open your web browser to
+4. To test your application, run the manage.py file: `python manage.py runserver`, and open your web browser to
 `localhost:5000`.
 
 That's it! You are ready to start coding your project.
-
-### Deploying to AWS
-
-*Note: the setup script assumes you are deploying to an Ubuntu **14.04** Server*
-
-1. Secure copy the setup script (located in the deployment directory) to the remote host.
-
-  ```
-  scp -i mykey.pem /path/to/setup.sh ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com:~
-  ```
-
-  where `mykey.pem` is your downloaded key pair from Amazon and `@ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
-  is your Amazon EC2 Public DNS.
-
-2. SSH into the remote host and run the setup script. Answer the questions when prompted and wait for
-the downloads to finish.
-
-  ```
-  ssh -i mykey.pem ubuntu@ec2-12-345-67-89.us-west-2.compute.amazonaws.com
-  source setup.sh
-  ```
-
-3. Open up a web browser and enter your public DNS: `ec2-12-345-67-89.us-west-2.compute.amazonaws.com`
-
-That's it, you should now have a fully functioning web app!
