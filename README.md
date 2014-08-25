@@ -13,8 +13,7 @@ InsightFL comes with all the necessary tools you'll need to create your web app 
   2. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML.
   3. And its already in version control from the [Git](http://git-scm.com/) go!
 
-To get started building your web app, follow the instructions below to setup your development and production
-environments.
+To get started building your web app, follow the instructions below to setup your development environment.
 
 ### Getting Started <a name="getting-started"></a>
 #### System Requirements <a name="system-requirements"></a>
