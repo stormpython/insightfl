@@ -11,16 +11,16 @@
     <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Revealjs core CSS -->
-    <link href="{{ url_for('static', filename='vendor/components-revealjs/css/reveal.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/revealjs/reveal.min.css') }}" rel="stylesheet">
 
     <!-- Page specific CSS files -->
     {% block head %}{% endblock %}
 
     <!-- Genericons core CSS -->
-    <link href="{{ url_for('static', filename='vendor/Genericons/genericons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/Genericons/genericons.css') }}" rel="stylesheet">
 
     <!-- Your custom styles -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
@@ -68,9 +68,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ url_for('static', filename='vendor/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js') }}"></script>
 
     <!-- Page specific script files -->
     {% block scripts %}{% endblock %}

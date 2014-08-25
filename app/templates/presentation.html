@@ -1,7 +1,7 @@
 {% extends "layout/base.html" %}
 
 {% block head %}
-  <link href="{{ url_for('static', filename='vendor/components-revealjs/css/theme/default.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/revealjs/theme/default.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -323,7 +323,8 @@
 
 {% block scripts %}
   <!-- Presentation Libraries -->
-  <script src="{{ url_for('static', filename='vendor/components-revealjs/lib/js/head.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendor/components-revealjs/js/reveal.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/revealjs/head.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/revealjs/reveal.min.js') }}"></script>
+  // Personal reveal.js file
   <script src="{{ url_for('static', filename='js/reveal.js') }}"></script>
 {% endblock %}
