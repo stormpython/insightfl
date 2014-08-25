@@ -1,6 +1,5 @@
 # Launching an Amazon AWS EC2 Instance
 
-
 1. Create an [Amazon AWS](http://aws.amazon.com/) account and sign in. Visit this
 [link](https://github.com/stormpython/insightfl/blob/master/docs/requirements.md#amazon-aws)
 for account creation instructions.
@@ -58,6 +57,3 @@ Increase the storage space if needed and click on `Review and Launch`.
 for your EC2 instance.
 
     ![Alt text](images/public-dns.png)
-
-14. Visit [Deploying to AWS](https://github.com/stormpython/insightfl#deploying-to-aws) to deploy your
-web application to your EC2 instance.
