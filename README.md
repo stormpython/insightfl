@@ -19,7 +19,7 @@ To get started building your web app, follow the instructions below to setup you
 #### System Requirements <a name="system-requirements"></a>
 1. [Python](https://www.python.org/downloads/)(v2.7+) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 
-#### Dev Environment Setup <a name="environment-setup"></a>
+#### Setup <a name="environment-setup"></a>
 1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
 
   **Note:** It is helpful to change the repository name **before** cloning. In Github, click on `Settings` on the right-hand
