@@ -11,10 +11,10 @@
     <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='lib/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/bootstrap/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Revealjs core CSS -->
-    <link href="{{ url_for('static', filename='lib/reveal.js-2.1/css/reveal.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/revealjs/reveal.js-2.1/css/reveal.css') }}" rel="stylesheet">
 
     <!-- Page specific CSS files -->
     {% block head %}{% endblock %}
@@ -71,7 +71,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ url_for('static', filename='lib/jquery/jquery-2.1.1.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='lib/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Page specific script files -->
     {% block scripts %}{% endblock %}
