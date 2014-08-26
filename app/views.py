@@ -1,10 +1,5 @@
 from flask import render_template
-from app import app, host, port, user, passwd, db
-from app.helpers.database import con_db
-
-# To create a database connection, add the following
-# within your view functions:
-con = con_db(host, port, user, passwd, db)
+from app import app
 
 
 # ROUTING/VIEW FUNCTIONS

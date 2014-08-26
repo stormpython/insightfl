@@ -4,12 +4,12 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
-    DATABASE_HOST = 'localhost'
-    DATABASE_PORT = 3306
-    DATABASE_USER = None
-    DATABASE_PASSWORD = None
-    DATABASE_DB = None
-    DATABASE_CHARSET = 'utf8'
+    MYSQL_DATABASE_HOST = 'localhost'
+    MYSQL_DATABASE_PORT = 3306
+    MYSQL_DATABASE_USER = None
+    MYSQL_DATABASE_PASSWORD = None
+    MYSQL_DATABASE_DB = None
+    MYSQL_DATABASE_CHARSET = 'utf8'
 
     @staticmethod
     def init_app(app):
