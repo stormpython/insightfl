@@ -11,16 +11,16 @@
     <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='lib/bootstrap/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Revealjs core CSS -->
-    <link href="{{ url_for('static', filename='lib/revealjs/reveal.js-2.1/css/reveal.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/revealjs/reveal.js-2.1/css/reveal.css') }}" rel="stylesheet">
 
     <!-- Page specific CSS files -->
     {% block head %}{% endblock %}
 
     <!-- Genericons core CSS -->
-    <link href="{{ url_for('static', filename='lib/genericons/genericons/genericons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/genericons/genericons/genericons.css') }}" rel="stylesheet">
 
     <!-- Your custom styles -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
@@ -29,8 +29,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/vendors/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/vendors/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -70,8 +70,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ url_for('static', filename='lib/jquery/jquery-2.1.1.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='lib/bootstrap/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Page specific script files -->
     {% block scripts %}{% endblock %}

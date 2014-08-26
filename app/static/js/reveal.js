@@ -76,25 +76,25 @@ Reveal.initialize({
 
     dependencies: [
         // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-        { src: 'static/lib/revealjs/revealjs-2.1/lib/js/classList.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/vendor/js/classList.js',
             condition: function() { return !document.body.classList; } },
 
         // Interpret Markdown in <section> elements
-        { src: 'static/lib/revealjs/reveal.js-2.1/plugin/markdown/marked.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/plugin/markdown/marked.js',
             condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'static/lib/revealjs/reveal.js-2.1/plugin/markdown/markdown.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/plugin/markdown/markdown.js',
             condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
         // Syntax highlight for <code> elements
-        { src: 'static/lib/revealjs/revealjs-2.1/plugin/highlight/highlight.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/plugin/highlight/highlight.js',
             async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
         // Zoom in and out with Alt+click
-        { src: 'static/lib/revealjs/revealjs-2.1/plugin/zoom-js/zoom.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/plugin/zoom-js/zoom.js',
             async: true, condition: function() { return !!document.body.classList; } },
 
         // Speaker notes
-        { src: 'static/lib/revealjs/revealjs-2.1/plugin/notes/notes.js',
+        { src: 'static/vendor/revealjs/reveal.js-2.1/plugin/notes/notes.js',
             async: true, condition: function() { return !!document.body.classList; } }
     ]
 });
