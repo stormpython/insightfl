@@ -11,16 +11,16 @@
     <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Revealjs core CSS -->
-    <link href="{{ url_for('static', filename='css/revealjs/reveal.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/reveal.js-2.1/css/reveal.css') }}" rel="stylesheet">
 
     <!-- Page specific CSS files -->
     {% block head %}{% endblock %}
 
     <!-- Genericons core CSS -->
-    <link href="{{ url_for('static', filename='css/Genericons/genericons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/genericons/genericons/genericons.css') }}" rel="stylesheet">
 
     <!-- Your custom styles -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
@@ -58,9 +58,11 @@
     </div>
 
     <!-- Main content injection point -->
-    <!-- Within the content block, wrap content with <div id="wrap"><div>
+    <!-- Wrap content with <div id="wrap"><div>
           when using the footer block to push the footer down. -->
-    {% block content %}{% endblock %}
+    <div id="wrap">
+      {% block content %}{% endblock %}
+    </div>
 
     <!-- The footer is placed within its own block to render properly -->
     {% block footer %}{% endblock %}
@@ -68,15 +70,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ url_for('static', filename='js/jquery/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Page specific script files -->
     {% block scripts %}{% endblock %}
 
     <script type="text/javascript">
       // Dynamically add the bootstrap 'active' class to navbar links.
-      $(document).ready(function($){
+      $(document).ready(function ($) {
         var urlPath = window.location.pathname.split('/')[1];
         // if urlPath is empty, redefine to the string 'index'
         urlPath === '' ? urlPath = 'index' : urlPath = urlPath;
