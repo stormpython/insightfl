@@ -37,8 +37,23 @@ body {
     vertical-align: middle;
 }
 
+.genericon-footer {
+    margin-left: 45%;
+    bottom: 10px;
+}
+
 .social-icons {
     display: inline-block;
     vertical-align: middle;
     margin: 5px 0;
+}
+
+/* Error styles
+---------------------------------------------------- */
+.error-404-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -285px;
+    margin-top: -120px;
 }
