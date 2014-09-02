@@ -28,8 +28,10 @@ To get started building your web app, follow the instructions below to setup you
   ```
   # Install virtualenv
   sudo pip install virtualenv
+
   # Create virtualenv folder `venv`
   virtualenv venv
+
   # Activate the virtual environment
   source venv/bin/activate
   ```
