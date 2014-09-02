@@ -7,12 +7,6 @@ data scientists in the [Insight Data Science](http://insightdatascience.com/) pr
 off the ground quickly. As a former Insight fellow, I spent way too much time troubleshooting the ins and outs of
 web development instead of focusing on what truly mattered, extracting insight from my data.
 
-InsightFL comes with all the necessary tools you'll need to create your web app quickly:
-
-  1. [Twitter Bootstrap](http://getbootstrap.com/) for designing your web pages.
-  2. [Reveal.js](http://lab.hakim.se/reveal-js/#/) for creating amazing presentations in HTML.
-  3. And its already in version control from the [Git](http://git-scm.com/) go!
-
 To get started building your web app, follow the instructions below to setup your development environment.
 
 ### Getting Started <a name="getting-started"></a>
