@@ -1,4 +1,4 @@
 -- MySQL schemas
 -- To import your schemas into your database, run:
--- `mysql -u username -p database < schema.sql`
+-- `mysql -u username -p database < schema.sql` from the project directory
 -- where username is your MySQL username
