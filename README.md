@@ -61,7 +61,6 @@ smaller chunks, which makes for cleaner code and easier debugging.
 
 #### Project Layout
 - **app** - Where your Flask web application lives. This is where you'll spend the majority of your time
-- **docs** - Project documentation
 - **.gitignore** - [Git ignore file](https://help.github.com/articles/ignoring-files)
 - **config.py** - Project configuration file for storing sensitive or dynamic settings, e.g. database settings 
 - **LICENSE.md** - Project license
@@ -75,6 +74,7 @@ smaller chunks, which makes for cleaner code and easier debugging.
     - [Flask QuickStart](http://flask.pocoo.org/docs/0.10/quickstart/#a-minimal-application)
     - [Flask, pip, and virtualenv](http://flask.pocoo.org/docs/0.10/installation/)
     - [Getting started with pip](http://pip.readthedocs.org/en/latest/user_guide.html)
+    - [Setup Git](https://help.github.com/articles/set-up-git)
 
 2. **Interactive Tutorials**
     - [Learning HTML, CSS](http://www.codecademy.com/tracks/web)
