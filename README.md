@@ -4,8 +4,8 @@ A basic template for building minimal web applications.
 ### Introduction
 InsightFL is a basic [Flask](http://flask.pocoo.org/) template created specifically to help budding
 data scientists in the [Insight Data Science](http://insightdatascience.com/) program get their web applications
-off the ground quickly. As a former Insight fellow, I spent way too much time troubleshooting the ins and outs of
-web development instead of focusing on what truly mattered, extracting insight from my data.
+off the ground quickly. As a former Insight fellow, I spent too much time troubleshooting the ins and outs of
+web development instead of focusing on extracting insight from my data.
 
 To get started building your web app, follow the instructions below to setup your development environment.
 
@@ -46,3 +46,12 @@ To get started building your web app, follow the instructions below to setup you
 `localhost:5000`.
 
 That's it! You are ready to start coding your project.
+
+### Application Structure
+#### Philosophy
+InsightFL's project layout mimics that of large Flask applications. This is done intentionally. Despite the
+fact that most Insight projects are small applications, utilizing this structure allows you to separate your development 
+concerns more effectively. Instead of having all your web app code in one file, it can be broken up into separate, 
+smaller chunks, which makes for cleaner code and easier debugging.
+
+### Project Layout
