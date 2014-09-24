@@ -63,7 +63,7 @@ smaller chunks, which makes for cleaner code and easier debugging.
 - **manage.py** - Entry point to your Flask application, click [here](http://flask-script.readthedocs.org/en/latest/) for more info.
 - **README.md** - You're looking at it! :)
 - **requirements.txt** - Tracks all your Python dependencies using [pip](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)
-- **schema.sql** - Your database schemas
+- **schema.sql** - Your SQL database schemas
 
 ### Resources
 1. **Documentation**
