@@ -30,7 +30,6 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 
   ```
   # cd into your InsightFL project folder
-  
   # Install virtualenv
   sudo pip install virtualenv
 
