@@ -7,7 +7,7 @@
 
 ## System Requirements
 ### Python
-1. Install [Python](https://www.python.org/downloads/) if it is not already installed. *By default python comes
+1. Install [Python](https://www.python.org/downloads/) if it is not already installed. *By default Python comes
 installed in* **Mac OS X** and **Linux**.
 2. Install [pip](http://pip.readthedocs.org/en/latest/installing.html) if it is not already installed.
 
