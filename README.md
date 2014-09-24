@@ -26,6 +26,7 @@ To get started building your web app, follow the instructions below to setup you
 2. **Recommended:** Install virtualenv and fire up a virtual environment.
 
   ```
+  # cd into your InsightFL project folder
   # Install virtualenv
   sudo pip install virtualenv
 
