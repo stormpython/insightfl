@@ -54,4 +54,13 @@ fact that most Insight projects are small applications, utilizing this structure
 concerns more effectively. Instead of having all your web app code in one file, it can be broken up into separate, 
 smaller chunks, which makes for cleaner code and easier debugging.
 
-### Project Layout
+#### Project Layout
+- **app** - Where your Flask web application lives. This is where you'll spend the majority of your time
+- **docs** - Project documentation
+- **.gitignore** - [Git ignore file](https://help.github.com/articles/ignoring-files)
+- **config.py** - Project configuration file for storing sensitive or dynamic settings, e.g. database passwords
+- **LICENSE.md** - Project license
+- **manage.py** - Entry point to running your Flask application, click [here](http://flask-script.readthedocs.org/en/latest/) for more info.
+- **README.md** - You're looking at it! :)
+- **requirements.txt** - Tracks all your Python dependencies using [pip](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)
+- **schema.sql** - Your database schemas
