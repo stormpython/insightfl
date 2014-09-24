@@ -9,6 +9,9 @@ web development instead of focusing on extracting insight from my data.
 
 To get started building your web app, follow the instructions below to setup your development environment.
 
+**Note**: This assumes you are comfortable with the Terminal and have some familiarity with Unix/Linux commands. If this
+is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching/Unix/).
+
 ### Getting Started <a name="getting-started"></a>
 #### System Requirements <a name="system-requirements"></a>
 1. [Python](https://www.python.org/downloads/)(v2.7+) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
@@ -27,6 +30,7 @@ To get started building your web app, follow the instructions below to setup you
 
   ```
   # cd into your InsightFL project folder
+  
   # Install virtualenv
   sudo pip install virtualenv
 
