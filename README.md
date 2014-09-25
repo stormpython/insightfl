@@ -4,8 +4,8 @@ A basic template for building minimal web applications.
 ### Introduction
 InsightFL is a basic [Flask](http://flask.pocoo.org/) template created specifically to help budding
 data scientists in the [Insight Data Science](http://insightdatascience.com/) program get their web applications
-off the ground quickly. As a former Insight fellow, I spent too much time troubleshooting the ins and outs of
-web development instead of focusing on extracting insight from my data.
+off the ground quickly. If you are new to Flask and web development, take a look at the 
+[resources](https://github.com/stormpython/insightfl#resources) below.
 
 To get started building your web app, follow the instructions below to setup your development environment.
 
