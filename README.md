@@ -18,7 +18,7 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 1. [Python](https://www.python.org/downloads/)(v2.7+) with [pip](http://pip.readthedocs.org/en/latest/installing.html) installed.
 
 #### Setup <a name="environment-setup"></a>
-1. Fork the [project](https://github.com/stormpython/insightfl/fork) and clone the repository.
+1. [Fork](https://github.com/stormpython/insightfl/fork) the project and clone the repository.
 
   **Note:** It is helpful to change the repository name **before** cloning. In Github, click on `Settings` on the right-hand
   side of your screen. Within the Settings box at the top of the screen, rename the repository and click `Rename`.
