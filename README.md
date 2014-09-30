@@ -50,6 +50,8 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 4. To test your application, run the manage.py file: `python manage.py runserver`, and open your web browser to
 `localhost:5000`.
 
+[!Alt text](images/index.png)
+
 That's it! You are ready to start coding your project.
 
 ### Application Structure
