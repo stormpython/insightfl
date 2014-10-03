@@ -50,7 +50,7 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 4. To test your application, run the manage.py file: `python manage.py runserver`, and open your web browser to
 `localhost:5000`.
 
-![Alt text](https://www.dropbox.com/s/s22co5z1c6f3bj9/insightfl.png?dl=0)
+![Home Page](https://dl.dropboxusercontent.com/u/30620269/insightfl.png)
 
 That's it! You are ready to start coding your project.
 
