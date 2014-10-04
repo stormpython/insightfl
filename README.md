@@ -52,7 +52,7 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 
 ![Home Page](https://dl.dropboxusercontent.com/u/30620269/insightfl.png)
 
-That's it! You are ready to start coding your project.
+That's it! You are ready to start building your web application.
 
 ### Application Structure
 #### Philosophy
