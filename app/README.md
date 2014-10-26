@@ -4,7 +4,7 @@
 see the [documentation](http://flask.pocoo.org/docs/0.10/patterns/packages/)
 - **views.py** - Application view functions. For more on getting started building view functions,
  read the [Quickstart](http://flask.pocoo.org/docs/0.10/quickstart/) guide.
-- **errors.py** - Routes for your basic [HTTP standard response errors](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error)
+- **errors.py** - Application error functions for your basic [HTTP standard response errors](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error)
 - **README.md** - You're looking at it! :) 
 - **static** - Store you Javascript, CSS, and image files here. 
 Along with your 3rd party vendor static files, such as [Bootstrap](http://getbootstrap.com/).
