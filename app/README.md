@@ -1,5 +1,5 @@
 ## Application Structure
-### Project Layout
+### App Layout
 - **\__init__.py** - Root of your Flask application. For more on understanding this application structure,   
 see the [documentation](http://flask.pocoo.org/docs/0.10/patterns/packages/)
 - **views.py** - Application view functions. For more on getting started building view functions,
@@ -10,4 +10,4 @@ see the [documentation](http://flask.pocoo.org/docs/0.10/patterns/packages/)
 Along with your 3rd party vendor static files, such as [Bootstrap](http://getbootstrap.com/).
 For more info on using static files in Flask, see the [documentation](http://flask.pocoo.org/docs/0.10/quickstart/#static-files).
 - **templates** - HTML files go here. Flask uses Jinja2 as its template engine.
- For more on info on using Jinja2, see the [documentation](http://jinja.pocoo.org/docs/dev/templates/)
+ For more info on using Jinja2, see the [documentation](http://jinja.pocoo.org/docs/dev/templates/)
