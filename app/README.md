@@ -1,6 +1,6 @@
 ## Application Structure
 ### Project Layout
-- **__init__.py** - Root of your Flask application. For more on understanding this application structure,   
+- **\__init__.py** - Root of your Flask application. For more on understanding this application structure,   
 see the [documentation](http://flask.pocoo.org/docs/0.10/patterns/packages/)
 - **views.py** - Application view functions. For more on getting started building view functions,
  read the [Quickstart](http://flask.pocoo.org/docs/0.10/quickstart/) guide.
