@@ -1,4 +1,4 @@
-# App Layout
+### App Layout
 - **\__init__.py** - Root of your Flask application. For more on understanding this application structure,   
 see the [documentation](http://flask.pocoo.org/docs/0.10/patterns/packages/)
 - **views.py** - Application view functions. For more on getting started building view functions,
