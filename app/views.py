@@ -10,6 +10,6 @@ def index():
     return render_template('index.html')
 
 @app.route('/author')
-def contact():
+def author():
     # Renders author.html.
     return render_template('author.html')
