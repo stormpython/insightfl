@@ -62,7 +62,7 @@ concerns more effectively. Instead of having all your web app code in one file, 
 smaller chunks, which makes for cleaner code and easier debugging.
 
 #### Project Layout
-- **[app](https://github.com/stormpython/insightfl/tree/develop/app)** - Where your Flask web application lives. This is where you'll spend the majority of your time
+- **[app](https://github.com/stormpython/insightfl/tree/master/app)** - Where your Flask web application lives. This is where you'll spend the majority of your time
 - **.gitignore** - [Git ignore file](https://help.github.com/articles/ignoring-files)
 - **config.py** - Project configuration file for storing sensitive or dynamic settings, e.g. database settings 
 - **LICENSE.md** - Project license
