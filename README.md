@@ -54,6 +54,10 @@ is not the case, take a look at this [guide](http://www.ee.surrey.ac.uk/Teaching
 
 That's it! You are ready to start building your web application.
 
+**Note**: *`manage.py` uses the builtin server for development. You should not use the builtin development server
+in production (i.e. when you're launching your web application). To run in production, use `gunicorn app:app` at
+the command line.*
+
 ### Application Structure
 #### Philosophy
 InsightFL's project layout mimics that of large Flask applications. This is done intentionally. Despite the
