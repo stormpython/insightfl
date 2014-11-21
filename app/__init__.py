@@ -3,7 +3,7 @@ from config import config
 import os
 
 
-# Creates our application.
+# Creates our Flask application.
 app = Flask(__name__)
 config_name = os.getenv('FLASK_CONFIG') or 'default'
 app.config.from_object(config[config_name])
