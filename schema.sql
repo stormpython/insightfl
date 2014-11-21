@@ -5,7 +5,8 @@
 
 -- To import your schemas into your database, run:
 -- `mysql -u <username> -p <database> < schema.sql` from the project directory
--- where username is your MySQL username
+-- where <username> is your MySQL username and <database> is the MySQL
+-- database of interest.
 
 -- An Example Schema:
 --  CREATE TABLE IF NOT EXISTS employees (
