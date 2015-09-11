@@ -1,8 +1,8 @@
 Flask==0.10.1
 Flask-Script==2.0.5
-Jinja2==2.7.3
+Jinja2==2.8
 MarkupSafe==0.23
-Werkzeug==0.9.6
+Werkzeug==0.10.4
 gunicorn==18.0
 itsdangerous==0.24
 simplejson==3.5.2
